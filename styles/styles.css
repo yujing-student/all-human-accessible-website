@@ -527,7 +527,7 @@ h3 {
             "item2"
 
     /*"item6"!*regel2*!*/;
-    grid-template-columns: 1fr;
+    grid-template-columns: 5em;
     grid-template-rows: 4em;
 
 }
@@ -541,30 +541,29 @@ h3 {
     white-space: nowrap; /*dit kan wel als alle boeken onder of naast elkaar komen te staan*/
     width: 36em;
 }
-
+.grid-buttons-left-rigt{
+        display: grid;
+        grid-template-columns: auto auto; /* Maak twee kolommen */
+        gap: 10px; /* Voeg wat ruimte toe tussen de knoppen */
+}
 
 .linkerkant-carosel-knop {
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: white;
     border-radius: 6%;
     padding: 20px;
-    position: absolute;
+    /*!*position: absolute;*!*/
+    /*display: grid;*/
 }
 
 .knoppen-carousel {
     /*background-color: red;*/
-
-    left: 8em;
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: white;
     border-radius: 6%;
     padding: 20px;
-    position: absolute;
-}
-
-.linkerkant-carosel-knop,
-.knoppen-carousel {
-    margin-bottom: 20px; /* Voeg 20px ruimte toe onder de knoppen */
+    /*position: absolute;*/
+    left: 10em;
 }
 
 .arrow { /*https://www.w3schools.com/howto/howto_css_arrows.asp*/
@@ -703,6 +702,7 @@ td {
 
 
     }
+
 
     .position-info-arrow {
         position: relative;
@@ -845,6 +845,9 @@ td {
         width: 55em;
     }
 
+
+
+
     .grid-books-blocks {
 
         display: grid;
@@ -944,6 +947,7 @@ td {
         width: 77em;
     }
 
+
     .grid-books-blocks {
         display: grid;
         grid-template-areas: "item1 item2 item3 item4";
@@ -1012,6 +1016,7 @@ td {
 
 
     }
+
 
 
     .grid-filters-functions {

@@ -171,8 +171,22 @@ document.querySelector("form").addEventListener('change', (event) => {
     // for loop i = 0 en die gaat door alle li's in html tot en met het einde daar staat .lenght ook voor
     for (let i = 0; i < listitems.length; i++) {
         listitems[i].dataset.filter
+        for (let i = 0; i < ul.length; i++) {
+            let all_ul = ul[i];/*verzamleing door de 2 ul */
+            let alle_li = all_ul.getElementsByTagName("li");/*alle li itemsn*/
+
+            for (let j = 0; j < alle_li.length; j++) {/*loop door de li items*/
+                 let booktitle = alle_li[j].getElementsByClassName("booktitle")[0];/*haal eerste element op van de li items*/
+                let txtValue = booktitle.textContent || booktitle.innerText;/*txt is de */
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    alle_li[j].style.display = "";
+                } else {
+                    alle_li[j].style.display = "none";
+                }
+                li.push(alle_li[j]); // Voeg het li-element toe aan de li-array
+            }
     }
-});
+}});
 
 // clickelementright();
 // clickelementleft();
