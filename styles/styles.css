@@ -493,7 +493,7 @@ h3 .dark {
 }
 
 h3 {
-    width: 25em;
+    width: 21em;
 }
 
 
@@ -652,15 +652,17 @@ td {
 @media (min-width: 48em)  and (max-width: 60em) {
     .grid-container {
         grid-template-areas:
-           "item1 item2"
-           "item3 item4"
+          "item1 item3"
+           "item2 item3"
+           "item4 item3"
            "item5 item6";
 
         /*grid-template-columns: 1fr 1fr;*/
-        gap: 10px;
+        /*gap: 10px;*/
 
         grid-template-columns: repeat(2, minmax(0, 10fr));
-
+        /*width: 43em ;*/
+        margin: 0 auto;
 
     }
 
@@ -672,7 +674,7 @@ td {
 
 
     .grid-item:nth-child(2) {
-        grid-area: item3;
+        grid-area: item2;
         /*position: relative;*/
         /*top: -5em;*/
         /*    dit kan niet vanwege uitklapbare summery */
@@ -680,19 +682,16 @@ td {
     }
 
     .grid-item:nth-child(3) {
-        grid-area: item2;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
+        grid-area: item3;
+        /*margin-bottom: 1em;*/
+        /*position: relative;*/
+        /*left: 5em;*/
 
     }
 
 
     .grid-item:nth-child(4) {
         grid-area: item4;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
 
     }
 
@@ -703,10 +702,6 @@ td {
     }
 
     .grid-item:nth-child(6) {
-        grid-area: item6;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
 
 
     }
@@ -764,15 +759,17 @@ td {
 @media (min-width: 60em)  and (max-width: 85em) {
     .grid-container {
         grid-template-areas:
-           "item1 item2"
-           "item3 item4"
+           "item1 item3"
+           "item2 item3"
+           "item4 item3"
            "item5 item6";
 
         /*grid-template-columns: 1fr 1fr;*/
         gap: 10px;
 
         grid-template-columns: repeat(2, minmax(0, 10fr));
-
+        /*width: 43em ;*/
+        margin: 0 auto;
 
     }
 
@@ -784,7 +781,7 @@ td {
 
 
     .grid-item:nth-child(2) {
-        grid-area: item3;
+        grid-area: item2;
         /*position: relative;*/
         /*top: -5em;*/
         /*    dit kan niet vanwege uitklapbare summery */
@@ -792,19 +789,16 @@ td {
     }
 
     .grid-item:nth-child(3) {
-        grid-area: item2;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
+        grid-area: item3;
+        /*margin-bottom: 1em;*/
+        /*position: relative;*/
+        /*left: 5em;*/
 
     }
 
 
     .grid-item:nth-child(4) {
         grid-area: item4;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
 
     }
 
@@ -815,14 +809,13 @@ td {
     }
 
     .grid-item:nth-child(6) {
-        grid-area: item6;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
 
 
     }
 
+    .to-long-text {
+        width: 24em;
+    }
 
     .reset .grid-filters-functions, .showresults {
         margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
@@ -872,31 +865,45 @@ td {
 @media (min-width: 85em) and (max-width: 100em) {
     .grid-container {
         grid-template-areas:
-            "item1 item2  "/*regel1*/
-            "item3 item4 "/*regel2*/
-            "item5  item6 "; /*regel3*/
+           "item1 item3"
+           "item2 item3"
+           "item4 item3"
+           "item5 item6";
+
         /*grid-template-columns: 1fr 1fr;*/
-        grid-template-columns: repeat(2, minmax(0, 10fr));
+        gap: 10px;
+
+        /*grid-template-columns: repeat(2, minmax(0, 10fr));*/
+        /*width: 43em ;*/
+        grid-template-columns: 33em 33em;
+        margin: 0 auto;
+
     }
 
     .grid-item:nth-child(1) {
         grid-area: item1;
-        height: 50px;
+
+
     }
 
-    /*1ste div*/
+
     .grid-item:nth-child(2) {
-        grid-area: item3;
-
-    }
-
-    /*2de div*/
-    .grid-item:nth-child(3) {
         grid-area: item2;
+        /*position: relative;*/
+        /*top: -5em;*/
+        /*    dit kan niet vanwege uitklapbare summery */
 
     }
 
-    /*3de div*/
+    .grid-item:nth-child(3) {
+        grid-area: item3;
+        /*margin-bottom: 1em;*/
+        /*position: relative;*/
+        /*left: 5em;*/
+
+    }
+
+
     .grid-item:nth-child(4) {
         grid-area: item4;
 
@@ -904,11 +911,14 @@ td {
 
     .grid-item:nth-child(5) {
         grid-area: item5;
-        /*grid-column: 1/-1;*/
+
+
     }
 
     .grid-item:nth-child(6) {
-        grid-area: item6;
+
+
+
     }
 
     .searchbar-div, .grid-filters-functions, .showresults {
