@@ -653,18 +653,16 @@ td {
     .grid-container {
         grid-template-areas:
           "item1 item3"
-           "item2 item3"
-           "item4 item3"
-           "item5 item6";
+        "item2 item3"
+        "item4 item3"
+        "item5 item6";
 
         /*grid-template-columns: 1fr 1fr;*/
         gap: 2em;
 
         grid-template-columns: repeat(2, minmax(0, 10fr));
-        /*width: 78em ;*/
-        /*width: 50em;*/
-        margin-left: calc((100% - 50em) / 2);
-        margin-right: calc((100% - 50em) / 2);
+
+        /*background-color: red;*/
 
     }
 
@@ -677,6 +675,7 @@ td {
 
     .grid-item:nth-child(2) {
         grid-area: item2;
+
         /*position: relative;*/
         /*top: -5em;*/
         /*    dit kan niet vanwege uitklapbare summery */
@@ -685,28 +684,23 @@ td {
 
     .grid-item:nth-child(3) {
         grid-area: item3;
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
+
+        /*margin-bottom: 1em;*/
+        /*position: relative;*/
+        /*left: 5em;*/
 
     }
 
 
     .grid-item:nth-child(4) {
         grid-area: item4;
+        /*background-color: #55f3b6;*/
 
     }
 
     .grid-item:nth-child(5) {
         grid-area: item5;
 
-
-    }
-
-    .grid-item:nth-child(6) {
-        margin-bottom: 1em;
-        position: relative;
-        left: 5em;
 
     }
 
@@ -926,7 +920,6 @@ td {
     .grid-item:nth-child(6) {
 
 
-
     }
 
     .searchbar-div, .grid-filters-functions, .showresults {
@@ -1016,7 +1009,6 @@ td {
     }
 
     .grid-item:nth-child(6) {
-
 
 
     }
