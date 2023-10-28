@@ -1,4 +1,4 @@
-const body = document.querySelector('body'),
+const body = document.querySelector("body"),
     sidebar = body.querySelector('nav'),
     toggle = body.querySelector(".toggle"),
     searchBtn = body.querySelector(".search-box"),
@@ -89,33 +89,7 @@ function clickleft() {
     }
 }
 
-function searchfunctionmislukt() {
-    let input, filter, ul, li, booktitle, i, txtValue;
-    input = document.getElementById("searchfunciton");
-    filter = input.value.toUpperCase();
-    ul = document.getElementsByClassName("myUL ");
-    li = ul.getElementsByTagName("li");/*dit werkt niet omdat je hiermee de ul volledig aanroept en dit apart moet vanwege de li die erin zit*/
 
-    let rest = document.querySelector('.reset');
-    for (i = 0; i < li.length; i++) {
-        booktitle = li[i].getElementsByClassName("booktitle")[0];
-        txtValue = booktitle.textContent || booktitle.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-
-        }
-
-    }
-    rest.addEventListener('click', function () {
-        // Selecteer alle li-elementen
-        let li = document.getElementsByClassName("myUL").getElementsByTagName("li");
-        for (let i = 0; i < li.length; i++) {
-            li[i].style.display = "block";//laat de resultaten weer zien
-        }
-    });
-}
 
 function searchfunction() {
     let input, filter, ul, li = [], booktitle, txtValue;
@@ -272,6 +246,33 @@ document.querySelector("form").addEventListener('change', (event) => {
 //             formresults.style.display = "none";
 //         }
 //     }
+// }
+// function searchfunctionmislukt() {
+//     let input, filter, ul, li, booktitle, i, txtValue;
+//     input = document.getElementById("searchfunciton");
+//     filter = input.value.toUpperCase();
+//     ul = document.getElementsByClassName("myUL ");
+//     li = ul.getElementsByTagName("li");/*dit werkt niet omdat je hiermee de ul volledig aanroept en dit apart moet vanwege de li die erin zit*/
+//
+//     let rest = document.querySelector('.reset');
+//     for (i = 0; i < li.length; i++) {
+//         booktitle = li[i].getElementsByClassName("booktitle")[0];
+//         txtValue = booktitle.textContent || booktitle.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             li[i].style.display = "";
+//         } else {
+//             li[i].style.display = "none";
+//
+//         }
+//
+//     }
+//     rest.addEventListener('click', function () {
+//         // Selecteer alle li-elementen
+//         let li = document.getElementsByClassName("myUL").getElementsByTagName("li");
+//         for (let i = 0; i < li.length; i++) {
+//             li[i].style.display = "block";//laat de resultaten weer zien
+//         }
+//     });
 // }
 
 //https://codepen.io/shooft/pen/yLGyeag

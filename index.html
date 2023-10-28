@@ -12,7 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to JavaScript script -->
-
+    <script src="./scripts/script.js" defer ></script><!--geen defer vanwege error in w3c validator-->
 
     <title>indexpagina</title>
     <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
@@ -148,7 +148,8 @@
 
 </nav>
 <!--https://www.jetbrains.com/help/webstorm/mastering-keyboard-shortcuts.html#choose-keymap-->
-<section class="home" tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
+<main class="home">
+<section  tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
     <div class="text"><img alt="logo" height="44" src="image/oba_20.png" width="84"></div>
     <div class="grid-container" tabindex="0">
         <div class="grid-item" tabindex="0">
@@ -175,7 +176,7 @@
         </div>
         <div class="grid-item" tabindex="0">
 
-            <div class="question1-div" tabindex="0"><!--https://www.oba.nl/service.html dit is het mooist-->
+            <div class="margin-divs-question" tabindex="0"><!--https://www.oba.nl/service.html dit is het mooist-->
                 <details>
                     <summary>Waar vind ik openstaande bedrage?</summary>
                     openstaande bedragen zijn via ideal te zien
@@ -183,14 +184,16 @@
 
 
             </div>
-            <div tabindex="0">
+            <div class="margin-divs-question" tabindex="0">
                 <details>
                     <summary>Wat kan ik op de deposito's pagina?</summary>
-                    uw materialen verlengen,
-                    zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien
-                    daarnaast
-                    kunt
-                    u ook:
+                    een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes,leengeld,etc kunt afrekenen.
+                </details>
+
+            </div>  <div class="margin-divs-question" tabindex="0">
+                <details>
+                    <summary>Wat kan ik op de deposito's pagina?</summary>
+                    een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes,leengeld,etc kunt afrekenen.
                 </details>
 
             </div>
@@ -210,7 +213,7 @@
             <h3 class="" tabindex="0">Hier kunt u zoeken naar boeken dvd's of activiteiten en klik op de
                 button zoek om
                 resulten te zien</h3>
-            <div class="searchbar-div">
+            <div class="searchbar-div" tabindex="0">
                 <!--                <label for="myInput"></label>-->
                 <input aria-label="zoeken naar boeken" id="searchfunciton" onkeyup="searchfunction()"
                        placeholder="typ hier uw boek in"
@@ -564,7 +567,8 @@
     </div>
 
 </section>
-<script src="./scripts/script.js" defer ></script><!--geen defer vanwege error in w3c validator-->
+
+</main>
 </body>
 </html>
 <!--            <div class="button-paragraph">-->

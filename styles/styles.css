@@ -442,8 +442,9 @@ body.dark .home .text {
 
 }
 
-summary { /*dit is het pijljte*/
+details { /*dit is het pijljte*/
     /*font-size: 1.5em;*/
+    width: 29em;
 }
 
 button {
@@ -461,8 +462,8 @@ button {
     color: white;
 }
 
-.question1-div {
-    margin-bottom: 1em;
+.margin-divs-question {
+    margin-bottom: 2em;
 }
 
 .collaps-open-funtion-boeken{ /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
@@ -684,8 +685,11 @@ td {
 
     }
 
-    .searchbar-div, .grid-filters-functions, .showresults {
+   .reset .grid-filters-functions, .showresults {
         margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
+    }
+    .searchbar-div{
+        margin-bottom: 2em;
     }
 
 
