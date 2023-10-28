@@ -438,13 +438,21 @@ body.dark .home .text {
 
 .grid-item:nth-child(5) {
     grid-area: item5;
+    height: 10em;
+
+}
+.grid-item:nth-child(6) {
+    grid-area: item6;
+    /*background-color: green;*/
+    /*padding: 0;*/
 
 
 }
 
+
 details { /*dit is het pijljte*/
     /*font-size: 1.5em;*/
-    width: 29em;
+    width: 25em;
 }
 
 button {
@@ -478,11 +486,11 @@ button {
 h3 .dark {
     background-color: white;
     /*margin: 1em;*/
-    width: 20em;
+    width: 15em;
 }
-/*h3.dark{*/
-/*    color: white;*/
-/*}*/
+h3{
+    width: 25em;
+}
 
 
 #searchfunciton {
@@ -681,6 +689,14 @@ td {
 
     .grid-item:nth-child(5) {
         grid-area: item5;
+
+
+    }
+    .grid-item:nth-child(6) {
+        grid-area: item6;
+        margin-bottom: 1em;
+        position: relative;
+        left: 5em;
 
 
     }
