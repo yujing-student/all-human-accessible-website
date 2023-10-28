@@ -1,0 +1,939 @@
+/* Fonts being used by the oba */
+@font-face {
+    font-family: AvenirRoman;
+    src: url(../font/Avenir-Roman.ttf);
+    /*value: auto;*/
+    /*initial:auto;*/
+}
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url('../font/Avenir-Medium.ttf');
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url(../font/Avenir-Black.ttf);
+}
+
+/* Custom properties */
+/* :root {
+    --red:#FF0000;
+    --dark-color:#ce0000;
+    --black:#000000;
+    --gray:#666;
+    /* --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #FF0000;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #000000;
+    /*#000000*/
+    /*oude kleur  --text-color: #707070;*/
+
+    /* ====== Transition ====== */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    font-family: AvenirMedium;
+}
+
+/* SCROLLBAR */
+/* BRON: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(61, 61, 61, .418);
+    border-radius: 4px;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+body.dark {
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    /*--primary-color: #3a3b3c;*/
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc; /*dit doet niks*/
+    color: white;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.sidebar.close {
+    width: 88px;
+}
+
+/* ===== Reusable code - Here ===== */
+.sidebar li {
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sidebar header .image,
+.sidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+.sidebar .icon {
+    min-width: 60px;
+    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar .text,
+.sidebar .icon {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .text {
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+}
+
+.sidebar .text-long,
+.sidebar .icon {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .text-long {
+    font-size: 17px;
+    font-weight: 500;
+    resize: none;
+    opacity: 1;
+}
+
+.sidebar.close .text-long {
+    resize: none;
+    opacity: 0;
+}
+
+/* =========================== */
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar header .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+header .image-text .name {
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+header .image-text .profession {
+    font-size: 16px;
+    margin-top: -2px;
+    display: block;
+}
+
+.sidebar header .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar header .image img {
+    width: 3rem;
+    border-radius: 180px;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+.sidebar.close .toggle {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar .menu {
+    margin-top: 18px;
+}
+
+.sidebar li.search-box {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.sidebar li.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--tran-05);
+}
+
+.sidebar li a {
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+
+.sidebar li a:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+.sidebar .menu-bar {
+    height: calc(100% - 55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    /*overflow: auto;*/
+}
+
+.menu-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .menu-bar .mode {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+.menu-bar .mode .sun-moon {
+    height: 50px;
+    width: 60px;
+}
+
+.mode .sun-moon i {
+    position: absolute;
+}
+
+.mode .sun-moon i.sun {
+    opacity: 0;
+}
+
+body.dark .mode .sun-moon i.sun {
+    opacity: 1;
+}
+
+body.dark .mode .sun-moon i.moon {
+    opacity: 0;
+}
+
+.menu-bar .bottom-content .toggle-switch {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: var(--toggle-color);
+    transition: var(--tran-05);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+
+body.dark .switch::before {
+    left: 20px;
+}
+
+.home {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.sidebar.close ~ .home {
+    left: 126px;
+    height: 100vh;
+    width: calc(100% - 78px);
+    font-size: 1em;
+}
+
+body.dark .home .text {
+    color: var(--text-color);
+}
+
+/*hier begin mijn code */
+/*dit is alleemaal mobiel*/
+/*iphone formaakt*/
+.grid-container {
+    display: grid; /*1 grote container met daarin 4 kinderen*/
+    grid-gap: 1em;
+    grid-template-areas:
+            "item1 "/*regel1*/
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+    /*"item6"!*regel2*!*/;
+    grid-template-columns: 1fr;
+}
+
+.grid-item { /*dit zijn de 4 kinderen met daarin de inhoud ide steeds meebeweegt*/
+    /*border: 0.1em solid black;*/
+    padding: 1em;
+    /*width: 20em;*/
+}
+
+.grid-item:nth-child(1) {
+    grid-area: item1;
+
+}
+
+
+.grid-item:nth-child(2) {
+    grid-area: item2;
+    margin-bottom: 1em;
+
+}
+
+.grid-item:nth-child(3) {
+    grid-area: item3;
+}
+
+
+.grid-item:nth-child(4) {
+    grid-area: item4;
+
+}
+
+.grid-item:nth-child(5) {
+    grid-area: item5;
+
+
+}
+
+summary { /*dit is het pijljte*/
+    /*font-size: 1.5em;*/
+}
+
+button {
+    border: none;
+    box-shadow: 10px 5px 5px #938f8f;
+
+    background-color: #E61C24;
+    /*color: #202121;*/
+    /*background-color: #DDFF00;*/
+    font-size: 1em;
+    font-family: AvenirMedium;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-left: 0.2em;
+    color: white;
+}
+
+.question1-div {
+    margin-bottom: 1em;
+}
+
+.collaps-open-funtion-boeken{ /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
+    display: none;
+}
+
+.button-boeken {
+    background-color: green;
+
+}
+
+h3 {
+    background-color: white;
+    /*margin: 1em;*/
+    width: 20em;
+}
+
+
+#searchfunciton {
+    font-size: 1em;
+}
+
+.item-filter { /*dit is de afstand tussen de butten dne de volgende tekst*/
+    /*display: grid;*/
+    /*grid-template-rows: 13em 14em;*/
+    /*position: relative;*/
+    margin-bottom: 1em;
+
+}
+
+.showresults, .showresultslist {
+    display: none;
+    color: var(--text-color);
+}
+
+.searchbooks-button {
+    background-color: #f7f4f4;
+    color: black;
+}
+
+.grid-button-books {
+    display: grid; /*1 grote container met daarin 4 kinderen*/
+    grid-gap: 1em;
+    grid-template-areas:
+            "item1 "/*regel1*/
+            "item2"
+
+    /*"item6"!*regel2*!*/;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4em;
+
+}
+
+.collapsible-boeken {
+    width: 15em;
+}
+
+#carousel {
+    overflow: auto; /*dit is onhandig omdat je boek1 niet kan vergelijken met boek 6 die aan het einde van de carousel staat*/
+    white-space: nowrap; /*dit kan wel als alle boeken onder of naast elkaar komen te staan*/
+    width: 21em;
+}
+
+
+.linkerkant-carosel-knop {
+    display: inline-block;
+    background-color: white;
+    border-radius: 6%;
+    padding: 20px;
+    position: absolute;
+}
+
+.knoppen-carousel {
+    /*background-color: red;*/
+
+    left: 8em;
+    display: inline-block;
+    background-color: white;
+    border-radius: 6%;
+    padding: 20px;
+    position: absolute;
+}
+
+.linkerkant-carosel-knop,
+.knoppen-carousel {
+    margin-bottom: 20px; /* Voeg 20px ruimte toe onder de knoppen */
+}
+
+.arrow { /*https://www.w3schools.com/howto/howto_css_arrows.asp*/
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 13px;
+    /*background-color: red;*/
+    font-size: 1em;
+
+
+}
+
+.right-button-carousel {
+    transform: rotate(-45deg);
+    /*-webkit-transform: rotate(-45deg);*/
+    /*background-color: red;*/
+}
+
+.left {
+    transform: rotate(135deg);
+    /*-webkit-transform: rotate(135deg);*/
+
+}
+
+/*.button-right{*/
+/*    position: relative;*/
+/*    left: 15em;*/
+/*}*/
+.grid-books {
+    display: flex;
+}
+
+.div-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.book {
+
+    border: 0.2em solid #fc2d2d;
+    margin: 1em;
+}
+
+#carousel, .showlist, .reset, .grid-filters-functions {
+    margin-bottom: 3em;
+}
+
+.hide-li-sign {
+    list-style-type: none;
+    gap: 1em;
+}
+
+.div-boete-table {
+    display: inline-block;
+    font-size: 1em;
+    color: var(--text-color);
+
+}
+
+/*dit is de naam boek en datum inleveren*/
+th {
+    color: #FFFFFF;
+    background-color: #E61C24;
+
+    border: 1px solid #dddddd; /*  hier word een randje meegegeven aan de th  */
+    font-size: 1.5em;
+
+
+}
+
+/*dit zijn de celblockej*/
+td {
+    background-color: #ffffff;
+    border: 0.2em solid #2a2a2a;
+    font-size: 1em;
+
+
+}
+
+
+/*tablet*/
+@media (min-width: 48em)  and (max-width: 60em) {
+    .grid-container {
+        grid-template-areas:
+           "item1 item2"
+           "item3 item4"
+           "item5 item6";
+
+        /*grid-template-columns: 1fr 1fr;*/
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+
+
+    }
+
+    .grid-item:nth-child(1) {
+        grid-area: item1;
+
+    }
+
+
+    .grid-item:nth-child(2) {
+        grid-area: item3;
+
+
+    }
+
+    .grid-item:nth-child(3) {
+        grid-area: item2;
+        margin-bottom: 1em;
+        position: relative;
+        left: 5em;
+
+    }
+
+
+    .grid-item:nth-child(4) {
+        grid-area: item4;
+        margin-bottom: 1em;
+        position: relative;
+        left: 5em;
+
+    }
+
+    .grid-item:nth-child(5) {
+        grid-area: item5;
+
+
+    }
+
+    .searchbar-div, .grid-filters-functions, .showresults {
+        margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
+    }
+
+
+    .grid-filters-functions {
+        display: grid;
+        grid-template-areas:
+            "item1 item2";
+        grid-template-columns: 12em 12em;
+        gap: 1em;
+
+        /*transform: translate(1em, 0em);*/
+        /*margin: 1em;*/
+    }
+
+    .item-filter {
+        margin: 0.1em;
+    }
+
+    #carousel {
+        width: 40em;
+    }
+
+    .grid-books-blocks {
+
+        display: grid;
+        grid-template-areas: "item1 item2";
+    }
+
+    .div-container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+}
+
+/*laptop*/
+@media (min-width: 60em)  and (max-width: 85em) {
+    .grid-container {
+        grid-template-areas:
+           "item1 item2"
+           "item3 item4"
+           "item5 item6";
+
+        /*grid-template-columns: 1fr 1fr;*/
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+    }
+
+    .grid-item:nth-child(1) {
+        grid-area: item1;
+
+    }
+
+    /*todo naaar dit kijken https://developer.chrome.com/docs/lighthouse/accessibility/?utm_source=lighthouse&utm_medium=devtools*/
+    .grid-item:nth-child(2) {
+        grid-area: item3;
+
+
+    }
+
+    .grid-item:nth-child(3) {
+        grid-area: item2;
+        margin-bottom: 1em;
+    }
+
+
+    .grid-item:nth-child(4) {
+        grid-area: item4;
+
+    }
+
+    .grid-item:nth-child(5) {
+        grid-area: item5;
+
+
+    }
+
+    .grid-item:nth-child(6) {
+        grid-area: item6;
+
+
+    }
+
+    .searchbar-div, .grid-filters-functions, .showresults {
+        margin-bottom: 1em;
+    }
+
+
+    .grid-filters-functions {
+        display: grid;
+        grid-template-areas:
+            "item1 item2";
+        grid-template-columns: 12em 12em;
+        gap: 1em;
+
+        /*transform: translate(28em, -5em);*/
+    }
+
+    .item-filter {
+        margin: 0.1em;
+    }
+
+    #carousel {
+        width: 75em;
+    }
+
+    .grid-books-blocks {
+        display: grid;
+        grid-template-areas: "item1 item2 item3";
+    }
+
+}
+
+/*laptop groot schem*/
+@media (min-width: 85em) and (max-width: 100em) {
+    .grid-container {
+        grid-template-areas:
+            "item1 item2  "/*regel1*/
+            "item3 item4 "/*regel2*/
+            "item5  item6 "; /*regel3*/
+        /*grid-template-columns: 1fr 1fr;*/
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+    }
+
+    .grid-item:nth-child(1) {
+        grid-area: item1;
+
+    }
+
+    /*1ste div*/
+    .grid-item:nth-child(2) {
+        grid-area: item3;
+
+    }
+
+    /*2de div*/
+    .grid-item:nth-child(3) {
+        grid-area: item2;
+
+    }
+
+    /*3de div*/
+    .grid-item:nth-child(4) {
+        grid-area: item4;
+
+    }
+
+    .grid-item:nth-child(5) {
+        grid-area: item5;
+        /*grid-column: 1/-1;*/
+    }
+
+    .grid-item:nth-child(6) {
+        grid-area: item6;
+    }
+
+    .searchbar-div, .grid-filters-functions, .showresults {
+        margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
+    }
+
+    .grid-filters-functions {
+        display: grid;
+        grid-template-areas:
+            "item1 item2";
+        grid-template-columns: 12em 12em;
+        gap: 1em;
+        /*transform: translate(40em, -5em);*/
+
+    }
+
+    .item-filter {
+        margin: 0.1em;
+    }
+
+    #carousel {
+        width: 77em;
+    }
+
+    .grid-books-blocks {
+        display: grid;
+        grid-template-areas: "item1 item2 item3 item4";
+    }
+
+}
+
+/*todo dit moet gefixt worden dat het scherm door 2 gaat en dat filter functie in het 6de vak komt */
+/*4k scherm*/
+@media (min-width: 100em) {
+    .grid-container {
+        grid-template-areas:
+            "item1 item2  "/*regel1*/
+            "item3 item4 "/*regel2*/
+            "item5  item6 "; /*regel3*/
+        grid-template-columns: repeat(2, minmax(0, 10fr));
+        /*grid-template-columns: 1fr 1fr;*/
+    }
+
+    .grid-item:nth-child(1) {
+        grid-area: item1;
+
+    }
+
+    /*1ste div*/
+    .grid-item:nth-child(2) {
+        grid-area: item3;
+
+    }
+
+    /*2de div*/
+    .grid-item:nth-child(3) {
+        grid-area: item2;
+
+    }
+
+    /*3de div*/
+    .grid-item:nth-child(4) {
+        grid-area: item4;
+
+    }
+
+    .grid-item:nth-child(5) {
+        grid-area: item5;
+    }
+
+    .grid-item:nth-child(6) {
+        grid-area: item6;
+    }
+
+    .grid-filters-functions {
+        display: grid;
+        grid-template-areas:
+            "item1 item2";
+        grid-template-columns: 12em 12em;
+        gap: 1em;
+        /*transform: translate(56em, -5em);*/
+    }
+
+    .item-filter {
+        margin: 0.1em;
+    }
+
+    #carousel {
+        width: 100em;
+    }
+
+    .grid-books-blocks {
+        display: grid;
+        grid-template-areas: "item1 item2 item3 item4 item5 item6";
+    }
+}
