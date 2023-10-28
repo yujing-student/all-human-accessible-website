@@ -88,7 +88,7 @@ body.dark {
     /*--primary-color: #3a3b3c;*/
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
-    --text-color: #ccc; /*dit doet niks*/
+    --text-color: #fff; /*dit doet niks #ccc*/
     color: white;
 }
 
@@ -474,11 +474,14 @@ button {
 
 }
 
-h3 {
+h3 .dark {
     background-color: white;
     /*margin: 1em;*/
     width: 20em;
 }
+/*h3.dark{*/
+/*    color: white;*/
+/*}*/
 
 
 #searchfunciton {

@@ -1,6 +1,9 @@
-const body = document.querySelector('body'), sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle"), searchBtn = body.querySelector(".search-box"),
-    modeSwitch = body.querySelector(".toggle-switch"), modeText = body.querySelector(".mode-text");
+const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    searchBtn = body.querySelector(".search-box"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text");
 
 
 toggle.addEventListener("click", () => {
@@ -22,7 +25,7 @@ modeSwitch.addEventListener("click", () => {
     }
 });
 
-
+/*hierboven moet straks weer uitcommented zijn*/
 function boeken() {
     // alert("druk op oke om naar de tabel te gaan emt daarin het boete overzicht");
     document.querySelector(".button-boeken").onclick = function openlink() {
@@ -66,7 +69,7 @@ function filtershow() {
 }
 
 
-function klikrechts() {
+function clickright() {
     let clickrightbutton = document.querySelector('.klikrechts');
     let carousel = document.querySelector('#carousel');
     if (clickrightbutton) {
@@ -76,7 +79,7 @@ function klikrechts() {
     }
 }
 
-function kliklinks() {
+function clickleft() {
     let clickrightbutton = document.querySelector('.kliklinks');
     let carousel = document.querySelector('#carousel');
     if (clickrightbutton) {
@@ -86,16 +89,17 @@ function kliklinks() {
     }
 }
 
-function searchfunction() {
-    let input, filter, ul, li, a, i, txtValue;
+function searchfunctionmislukt() {
+    let input, filter, ul, li, booktitle, i, txtValue;
     input = document.getElementById("searchfunciton");
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
+    ul = document.getElementsByClassName("myUL ");
+    li = ul.getElementsByTagName("li");/*dit werkt niet omdat je hiermee de ul volledig aanroept en dit apart moet vanwege de li die erin zit*/
+
     let rest = document.querySelector('.reset');
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByClassName("booktitle")[0];
-        txtValue = a.textContent || a.innerText;
+        booktitle = li[i].getElementsByClassName("booktitle")[0];
+        txtValue = booktitle.textContent || booktitle.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
@@ -106,15 +110,47 @@ function searchfunction() {
     }
     rest.addEventListener('click', function () {
         // Selecteer alle li-elementen
-        let li = document.getElementById("myUL").getElementsByTagName("li");
+        let li = document.getElementsByClassName("myUL").getElementsByTagName("li");
         for (let i = 0; i < li.length; i++) {
             li[i].style.display = "block";//laat de resultaten weer zien
         }
     });
 }
 
+function searchfunction() {
+    let input, filter, ul, li = [], booktitle, txtValue;
+    input = document.getElementById("searchfunciton");
+    filter = input.value.toUpperCase();
+    ul = document.getElementsByClassName("myUL");
 
-showdivresultslist();
+    for (let i = 0; i < ul.length; i++) {
+        let all_ul = ul[i];/*verzamleing door de 2 ul */
+        let alle_li = all_ul.getElementsByTagName("li");/*alle li itemsn*/
+
+        for (let j = 0; j < alle_li.length; j++) {/*loop door de li items*/
+            booktitle = alle_li[j].getElementsByClassName("booktitle")[0];/*haal eerste element op van de li items*/
+            txtValue = booktitle.textContent || booktitle.innerText;/*txt is de */
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                alle_li[j].style.display = "";
+            } else {
+                alle_li[j].style.display = "none";
+            }
+            li.push(alle_li[j]); // Voeg het li-element toe aan de li-array
+        }
+    }
+
+    let rest = document.querySelector('.reset');
+
+    rest.addEventListener('click', function () {
+        // Selecteer alle li-elementen
+        for (let i = 0; i < li.length; i++) {
+            li[i].style.display = "block"; //laat de resultaten weer zien
+        }
+    });
+}
+
+
+
 
 function showdivresultslist() {/*carousel laten zien*/
 
@@ -135,6 +171,7 @@ function showdivresultslist() {/*carousel laten zien*/
     }
 }
 
+showdivresultslist();
 function hidecarusel() {/*carousel laten zien*/
 
     let divresults = document.querySelector("#carousel");
