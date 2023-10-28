@@ -90,7 +90,6 @@ function clickleft() {
 }
 
 
-
 function searchfunction() {
     let input, filter, ul, li = [], booktitle, txtValue;
     input = document.getElementById("searchfunciton");
@@ -124,8 +123,6 @@ function searchfunction() {
 }
 
 
-
-
 function showdivresultslist() {/*carousel laten zien*/
 
     let divresults = document.querySelector(".showresultslist");
@@ -146,6 +143,7 @@ function showdivresultslist() {/*carousel laten zien*/
 }
 
 showdivresultslist();
+
 function hidecarusel() {/*carousel laten zien*/
 
     let divresults = document.querySelector("#carousel");

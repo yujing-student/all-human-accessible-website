@@ -446,6 +446,7 @@ body.dark .home .text {
     grid-area: item6;
 
 }
+
 .grid-item:nth-child(7) {
     grid-area: item7;
 
@@ -674,7 +675,7 @@ td {
         grid-area: item3;
         /*position: relative;*/
         /*top: -5em;*/
-    /*    dit kan niet vanwege uitklapbare summery */
+        /*    dit kan niet vanwege uitklapbare summery */
 
     }
 
@@ -709,7 +710,8 @@ td {
 
 
     }
-    .position-info-arrow{
+
+    .position-info-arrow {
         position: relative;
         top: 4em;
     }
