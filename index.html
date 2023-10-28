@@ -12,7 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to JavaScript script -->
-    <script src="./scripts/script.js" defer ></script><!--geen defer vanwege error in w3c validator-->
+    <script defer src="./scripts/script.js"></script><!--geen defer vanwege error in w3c validator-->
 
     <title>indexpagina</title>
     <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
@@ -149,400 +149,340 @@
 </nav>
 <!--https://www.jetbrains.com/help/webstorm/mastering-keyboard-shortcuts.html#choose-keymap-->
 <main class="home">
-<section  tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
-    <div class="text"><img alt="logo" height="44" src="image/oba_20.png" width="84"></div>
-    <div class="grid-container" tabindex="0">
-        <div class="grid-item" tabindex="0">
-            <h1 tabindex="0">Homepagina</h1>
-            <h2>welkom Amber</h2>
-            <p>Welkom op uw persoonlijke pagina van de website van de OBA.</p>
-
-        </div>
-
-        <div class="grid-item" tabindex="0">
-            <p>klikt u op de het pijltje dan kunt ur meer informartie lezen</p>
-            <details>
-                <summary>Op deze
-                    pagina kunt u :
-                </summary>
-                uw materialen verlengen,
-                zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien
-                daarnaast
-                kunt
-                u ook:
-            </details>
+    <section tabindex="0"><!--tabindex word gebruikt zodat dit element gevonden kan worden door de tab toets-->
+        <div class="text"><img alt="logo" height="44" src="image/oba_20.png" width="84"></div>
+        <div class="grid-container" tabindex="0">
+            <div class="grid-item" tabindex="0">
+                <h1 tabindex="0">Homepagina</h1>
+                <h2>welkom Amber</h2>
+                <p class="text-info">Welkom op uw persoonlijke pagina van de website van de OBA.</p>
 
 
-        </div>
-        <div class="grid-item" tabindex="0">
+            </div>
 
-            <div class="margin-divs-question" tabindex="0"><!--https://www.oba.nl/service.html dit is het mooist-->
+            <div class="grid-item" tabindex="0">
+                <p>klikt u op de het pijltje dan kunt ur meer informartie lezen</p>
                 <details>
-                    <summary>Waar vind ik openstaande bedrage?</summary>
-                    openstaande bedragen zijn via ideal te zien
+                    <summary>Op deze
+                        pagina kunt u :
+                    </summary>
+                    uw materialen verlengen,
+                    zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien
+                    daarnaast
+                    kunt
+                    u ook:
                 </details>
 
 
             </div>
-            <div class="margin-divs-question" tabindex="0">
-                <details>
-                    <summary>Wat kan ik op de deposito's pagina?</summary>
-                    een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes,leengeld,etc kunt afrekenen.
-                </details>
+            <div class="grid-item" tabindex="0">
 
-            </div>  <div class="margin-divs-question" tabindex="0">
-                <details>
-                    <summary>Wat kan ik op de deposito's pagina?</summary>
-                    een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes,leengeld,etc kunt afrekenen.
-                </details>
+                <div class="margin-divs-question" tabindex="0"><!--https://www.oba.nl/service.html dit is het mooist-->
+                    <h3>veelgestelde vragen</h3>
+                    <details>
+                        <summary>Waar vind ik openstaande bedrage?</summary>
+                        openstaande bedragen zijn via ideal te zien
+                    </details>
 
+
+                </div>
+                <div class="margin-divs-question" tabindex="0">
+                    <details>
+                        <summary>Wat kan ik op de deposito's pagina?</summary>
+                        een tegoed op uw pas zetten via ideal waarmee u toekomstige boetes,leengeld,etc kunt afrekenen.
+                    </details>
+
+                </div>
+                <div class="margin-divs-question" tabindex="0">
+                    <details>
+                        <summary>Waar kan ik mijn presoonlijke gegevens wijzigen</summary>
+                        dat kunt u bij mijn profiel kunt u dat zien
+                    </details>
+
+                </div>
             </div>
-        </div>
-        <div class="grid-item" tabindex="0">
-            <p tabindex="0">Klik hier om
-                te zien welke boeken
-                gaan verlopen zodat u ze
-                op tijd inlevert</p>
-            <button aria-pressed="false" class="button-boeken" onclick="boeken()" tabindex="0"
-                    type="button">ga naar boetepagina
-            </button>
-        </div>
-
-
-        <div class="grid-item" tabindex="0">
-            <h3 class="" tabindex="0">Hier kunt u zoeken naar boeken dvd's of activiteiten en klik op de
-                button zoek om
-                resulten te zien</h3>
-            <div class="searchbar-div" tabindex="0">
-                <!--                <label for="myInput"></label>-->
-                <input aria-label="zoeken naar boeken" id="searchfunciton" onkeyup="searchfunction()"
-                       placeholder="typ hier uw boek in"
-                       type="search">
-
-
-                <button aria-pressed="false" class="searchbooks-button" onclick="showdivresults()"
-                        tabindex="0" title="druk op de button om resultaat te zien" type="button">
-                    zoeken
+            <div class="grid-item" tabindex="0">
+                <p tabindex="0">Klik hier om
+                    te zien welke boeken
+                    gaan verlopen zodat u ze
+                    op tijd inlevert</p>
+                <button aria-pressed="false" class="button-boeken" onclick="boeken()" tabindex="0"
+                        type="button">ga naar boetepagina
                 </button>
             </div>
-            <button class="reset" title="resetbutton">reset toon alle resultaten</button>
-        </div>
-        <div class="grid-item" tabindex="0">
-            <div class="grid-filters-functions" tabindex="0">
-                <div class="item-filter">
-                    <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"
-                            tabindex="0"
-                            type="button">boeken filter onderwerpen
-                        klik om
-                        uit te
-                        klappen
+
+
+            <div class="grid-item" tabindex="0">
+                <h3 class="" tabindex="0">Hier kunt u zoeken naar boeken dvd's of activiteiten en klik op de
+                    button zoek om
+                    resulten te zien</h3>
+                <div class="searchbar-div" tabindex="0">
+                    <!--                <label for="myInput"></label>-->
+                    <input aria-label="zoeken naar boeken" id="searchfunciton" onkeyup="searchfunction()"
+                           placeholder="typ hier uw boek in"
+                           type="search">
+
+
+                    <button aria-pressed="false" class="searchbooks-button" onclick="showdivresults()"
+                            tabindex="0" title="druk op de button om resultaat te zien" type="button">
+                        zoeken
                     </button>
-                    <!--        <button>filterfunctie</button>-->
-                    <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
-
-                    <!--        https://www.w3schools.com/css/css_boxmodel.asp
-                    hier naar kijken met chekboxes of als sorteer functie activitetien dvd boeken-->
-                    <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
-                          class="collaps-open-funtion-boeken">
-                        <p>onderwerpen</p>
-                        <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                        <input id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
-                               value="sport">
-                        <label for="onderwerp-sport"> sport</label><br>
-                        <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
-                               value="cultuur">
-                        <label for="onderwerp-cultuur">cultuur</label><br>
-                        <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
-                               value="kunst">
-                        <label for="onderwerp-kunst">kunst</label><br>
-                        <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
-                               value="mode">
-                        <label for="onderwerp-mode">mode</label><br>
-                        <input type="reset" value="reset!">
-                    </form>
                 </div>
-
+                <button class="reset" title="resetbutton">reset toon alle resultaten</button>
             </div>
-        </div>
-            <div class="showresults" content="dit is een carousel waar de zoekresultaten in staan" tabindex="0">
+            <div class="grid-item" tabindex="0">
+                <div class="grid-filters-functions" tabindex="0">
+                    <div class="item-filter">
+                        <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"
+                                tabindex="0"
+                                type="button">boeken filter onderwerpen
+                            klik om
+                            uit te
+                            klappen
+                        </button>
+                        <!--        <button>filterfunctie</button>-->
+                        <!--    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox-->
 
-                <div id="carousel" tabindex="0">
-                    <div class="grid-button-books">
-                        <div class="">
-                            <button aria-pressed="false" class="linkerkant-carosel-knop "><i
-                                    class="arrow left kliklinks"
-                                    onclick="clickleft()"
-                            ></i></button>
-                            <button aria-pressed="false" class="knoppen-carousel "><i
-                                    class="arrow right-button-carousel klikrechts"
-                                    onclick="clickright()"
-                            ></i></button>
+                        <!--        https://www.w3schools.com/css/css_boxmodel.asp
+                        hier naar kijken met chekboxes of als sorteer functie activitetien dvd boeken-->
+                        <form aria-label="dit is het form met daarin de filter funcites die je kan selecteren"
+                              class="collaps-open-funtion-boeken">
+                            <p>onderwerpen</p>
+                            <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
+                            <input id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
+                                   value="sport">
+                            <label for="onderwerp-sport"> sport</label><br>
+                            <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
+                                   value="cultuur">
+                            <label for="onderwerp-cultuur">cultuur</label><br>
+                            <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
+                                   value="kunst">
+                            <label for="onderwerp-kunst">kunst</label><br>
+                            <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
+                                   value="mode">
+                            <label for="onderwerp-mode">mode</label><br>
+                            <input type="reset" value="reset!">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="showresults" content="dit is een carousel waar de zoekresultaten in staan" tabindex="0">
+
+                    <div id="carousel" tabindex="0">
+                        <div class="grid-button-books">
+                            <div class="">
+                                <button aria-pressed="false" class="linkerkant-carosel-knop "><i
+                                        class="arrow left kliklinks"
+                                        onclick="clickleft()"
+                                ></i></button>
+                                <button aria-pressed="false" class="knoppen-carousel "><i
+                                        class="arrow right-button-carousel klikrechts"
+                                        onclick="clickright()"
+                                ></i></button>
+                            </div>
+                            <div class="">
+                                <ul class="grid-books myUL" tabindex="0">
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek3" class="books-image" data-filter="sport"
+                                                         src="image/backup/aangepast/book-1.png">
+                                                    <!--aanpassen grote afbeelding in windows foto's formaat wijzigen-->
+                                                <p class="booktitle" data-filter="sport" tabindex="0">ajax</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek3" class="books-image" data-filter="sport"
+                                                         src="image/backup/aangepast/book-2.png">
+                                                <p class="booktitle" tabindex="0">psv</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek3" class="books-image"
+                                                         src="image/backup/aangepast/book-3.png">
+                                                <p class="booktitle" tabindex="0">karl lagerfied</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek4" class="books-image"
+                                                         src="image/backup/aangepast/book-4.png">
+                                                <p class="booktitle" tabindex="0">anna wintour</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek5" class="books-image"
+                                                         src="image/backup/aangepast/book-5.png">
+                                                <p class="booktitle" tabindex="0">breitner</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek6" class="books-image"
+                                                         src="image/backup/aangepast/book-6.png">
+                                                <p class="booktitle" tabindex="0">van gogh</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek7" class="books-image"
+                                                         src="image/backup/aangepast/book-7.png">
+                                                <p class="booktitle" tabindex="0">Memoirs of a Geisha</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek8" class="books-image"
+                                                         src="image/backup/aangepast/book-8.png">
+                                                <p class="booktitle" tabindex="0">The Darkening Age</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boe9" class="books-image"
+                                                         src="image/backup/aangepast/book-9.png">
+                                                <p class="booktitle" tabindex="0">9</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <p>
+                                                    <img alt="dit is boek10" class="books-image"
+                                                         src="image/backup/aangepast/book-10.png">
+                                                <p class="booktitle" tabindex="0">10</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="">
-                            <ul class="grid-books myUL" tabindex="0">
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek3" class="books-image" data-filter="sport"
+
+
+                    </div>
+                    <button aria-pressed="false" class="hidecouarsel" tabindex="0"
+                            title="searchbutton" type="button">
+                        verberg carousel
+                    </button>
+                    <p>wilt u liever een lijst zien voor een het overzicht klik op lijstweergave wilt u het carousel
+                        verbegen klik op verbeg carousel</p>
+                    <details>
+                        <summary class="showlist">lijstweergave zoekresultaten :</summary>
+                        <div class="showresultslist">
+                            <p class="start-book-items">resulaten boeken </p>
+                            <div class="">
+                                <!--            <p>dit zijn de gevonden resultaten</p>-->
+                                <ul class=" grid-books-blocks myUL" tabindex="0">
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <img alt="dit is boek1" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-1.png">
-                                                <!--aanpassen grote afbeelding in windows foto's formaat wijzigen-->
-                                            <p class="booktitle" data-filter="sport" tabindex="0">ajax</p>
-                                        </div>
+                                                <p class="booktitle" tabindex="0">ajax</p>
 
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek3" class="books-image" data-filter="sport"
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <img alt="dit is boek2" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-2.png">
-                                            <p class="booktitle" tabindex="0">psv</p>
-                                        </div>
+                                                <p class="booktitle" tabindex="0">psv</p>
 
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek3" class="books-image"
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-3.png">
-                                            <p class="booktitle" tabindex="0">karl lagerfied</p>
-                                        </div>
+                                                <p class="booktitle" tabindex="0">karl lagerfield</p>
 
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek4" class="books-image"
-                                                     src="image/backup/aangepast/book-4.png">
-                                            <p class="booktitle" tabindex="0">anna wintour</p>
+                                            </div>
                                         </div>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <img alt="dit is boek3" class="books-image" data-filter="sport"
+                                                     src="image/backup/aangepast/book-3.png">
+                                                <p class="booktitle" tabindex="0">devils wears prada</p>
 
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek5" class="books-image"
-                                                     src="image/backup/aangepast/book-5.png">
-                                            <p class="booktitle" tabindex="0">breitner</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek6" class="books-image"
-                                                     src="image/backup/aangepast/book-6.png">
-                                            <p class="booktitle" tabindex="0">van gogh</p>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <img alt="dit is boek3" class="books-image" data-filter="sport"
+                                                     src="image/backup/aangepast/book-3.png">
+                                                <p class="booktitle" tabindex="0">Breitner - Girl in A Kimono</p>
+
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek7" class="books-image"
-                                                     src="image/backup/aangepast/book-7.png">
-                                            <p class="booktitle" tabindex="0">Memoirs of a Geisha</p>
+                                    </li>
+                                    <li class="hide-li-sign">
+                                        <div class="book">
+                                            <div class="div-container-image">
+                                                <img alt="dit is boek3" class="books-image" data-filter="sport"
+                                                     src="image/backup/aangepast/book-3.png">
+                                                <p class="booktitle" tabindex="0">dear theo</p>
+
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek8" class="books-image"
-                                                     src="image/backup/aangepast/book-8.png">
-                                            <p class="booktitle" tabindex="0">The Darkening Age</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boe9" class="books-image"
-                                                     src="image/backup/aangepast/book-9.png">
-                                            <p class="booktitle" tabindex="0">9</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <p>
-                                                <img alt="dit is boek10" class="books-image"
-                                                     src="image/backup/aangepast/book-10.png">
-                                            <p class="booktitle" tabindex="0">10</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+
+
+                                <!--                <p class="content-book-under-name-book"> ajax is een voetbalclub uit amsterdam</p>-->
+                                <!--                <button>voeg toe aan leeslijst</button>-->
+                            </div>
                         </div>
-                    </div>
-
-
+                    </details>
                 </div>
-                <button aria-pressed="false" class="hidecouarsel" tabindex="0"
-                        title="searchbutton" type="button">
-                    verberg carousel
-                </button>
-                <p>wilt u liever een lijst zien voor een het overzicht klik op lijstweergave wilt u het carousel
-                    verbegen klik op verbeg carousel</p>
-                <details>
-                    <summary class="showlist">lijstweergave zoekresultaten :</summary>
-                    <div class="showresultslist">
-                        <p class="start-book-items">resulaten boeken </p>
-                        <div class="">
-                            <!--            <p>dit zijn de gevonden resultaten</p>-->
-                            <ul class=" grid-books-blocks myUL" tabindex="0">
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <img alt="dit is boek1" class="books-image" data-filter="sport"
-                                                 src="image/backup/aangepast/book-1.png">
-                                            <p class="booktitle" tabindex="0">ajax</p>
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <img alt="dit is boek2" class="books-image" data-filter="sport"
-                                                 src="image/backup/aangepast/book-2.png">
-                                            <p class="booktitle" tabindex="0">psv</p>
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <img alt="dit is boek3" class="books-image" data-filter="sport"
-                                                 src="image/backup/aangepast/book-3.png">
-                                            <p class="booktitle" tabindex="0">karl lagerfield</p>
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <img alt="dit is boek3" class="books-image" data-filter="sport"
-                                                 src="image/backup/aangepast/book-3.png">
-                                            <p class="booktitle" tabindex="0">devils wears prada</p>
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <img alt="dit is boek3" class="books-image" data-filter="sport"
-                                                 src="image/backup/aangepast/book-3.png">
-                                            <p class="booktitle" tabindex="0">Breitner - Girl in A Kimono</p>
-
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="hide-li-sign">
-                                    <div class="book">
-                                        <div class="div-container-image">
-                                            <img alt="dit is boek3" class="books-image" data-filter="sport"
-                                                 src="image/backup/aangepast/book-3.png">
-                                            <p class="booktitle" tabindex="0">dear theo</p>
-
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <!--                <p class="content-book-under-name-book"> ajax is een voetbalclub uit amsterdam</p>-->
-                            <!--                <button>voeg toe aan leeslijst</button>-->
-                        </div>
-                    </div>
-                </details>
             </div>
+
         </div>
 
 
-        <div class="grid-item">
-            <!--            <div class="grid-filters-functions" tabindex="0">-->
-            <!--                <div class="item-filter">-->
-            <!--                    <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"-->
-            <!--                            tabindex="0"-->
-            <!--                            type="button">boeken filter onderwerpen-->
-            <!--                        klik om-->
-            <!--                        uit te-->
-            <!--                        klappen-->
-            <!--                    </button>-->
-            <!--                    &lt;!&ndash;        <button>filterfunctie</button>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox&ndash;&gt;-->
-
-            <!--                    &lt;!&ndash;        https://www.w3schools.com/css/css_boxmodel.asp-->
-            <!--                    hier naar kijken met chekboxes of als sorteer functie activitetien dvd boeken&ndash;&gt;-->
-            <!--                    <form aria-label="Contact information" class="collaps-open-funtion-boeken">-->
-            <!--                        <p>onderwerpen</p>-->
-            <!--                        &lt;!&ndash; de section class filter moet pas weergegeven worden nadat op de button geklikt is           &ndash;&gt;-->
-            <!--                        <input id="onderwerp-sport" name="onderwerp-sport" type="checkbox"-->
-            <!--                               value="sport">-->
-            <!--                        <label for="onderwerp-sport"> sport</label><br>-->
-            <!--                        <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"-->
-            <!--                               value="cultuur">-->
-            <!--                        <label for="onderwerp-cultuur">cultuur</label><br>-->
-            <!--                        <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"-->
-            <!--                               value="kunst">-->
-            <!--                        <label for="onderwerp-kunst">kunst</label><br>-->
-            <!--                        <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox"-->
-            <!--                               value="mode">-->
-            <!--                        <label for="onderwerp-mode">mode</label><br>-->
-            <!--                        <input type="reset" value="reset!">-->
-            <!--                    </form>-->
-            <!--                </div>-->
-            <!--                <div class="item-filter" tabindex="0">-->
-            <!--                    &lt;!&ndash;        <button>filterfunctie</button>&ndash;&gt;-->
-            <!--                    &lt;!&ndash;    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox&ndash;&gt;-->
-
-            <!--                    &lt;!&ndash;        https://www.w3schools.com/css/css_boxmodel.asp-->
-            <!--                    hier naar kijken met chekboxes of als sorteer functie activitetien dvd boeken&ndash;&gt;-->
-            <!--                    <button aria-pressed="false" class="collapsible-dvd" onclick="filtershowdvd()"-->
-            <!--                            tabindex="0"-->
-            <!--                            type="button">dvd filter onderwerpen-->
-            <!--                        klik om uit-->
-            <!--                        te klappen-->
-            <!--                    </button>-->
-            <!--                    <form aria-label="Contact information" class="collaps-open-funtion-dvd">-->
-            <!--                        <p>onderwerpen</p>-->
-            <!--                        <input id="onderwerp-sport-dvd" name="onderwerp-sport" type="checkbox"-->
-            <!--                               value="sport">-->
-            <!--                        <label for="onderwerp-sport-dvd"> sport</label><br>-->
-            <!--                        <input id="onderwerp-cultuur-dvd" name="onderwerp-cultuur" type="checkbox"-->
-            <!--                               value="cultuur">-->
-            <!--                        <label for="onderwerp-cultuur-dvd">cultuur</label><br>-->
-            <!--                        <input id="onderwerp-kunst-dvd" name="onderwerp-kunst" type="checkbox"-->
-            <!--                               value="kunst">-->
-            <!--                        <label for="onderwerp-kunst-dvd">kunst</label><br>-->
-            <!--                        <input id="onderwerp-mode-dvd" name="onderwerp-mode" type="checkbox" value="mode">-->
-            <!--                        <label for="onderwerp-mode-dvd">mode</label><br>-->
-            <!--                        <input type="reset" value="reset!">-->
-            <!--                    </form>-->
-            <!--                </div>-->
-            <!--            </div>-->
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 </main>
 </body>
@@ -611,3 +551,66 @@
 <!--                        <input type="reset" value="reset!">-->
 <!--                    </form>-->
 <!--                </div>-->
+
+
+<!--            <div class="grid-filters-functions" tabindex="0">-->
+<!--                <div class="item-filter">-->
+<!--                    <button aria-pressed="false" class="collapsible-boeken" onclick="filtershow()"-->
+<!--                            tabindex="0"-->
+<!--                            type="button">boeken filter onderwerpen-->
+<!--                        klik om-->
+<!--                        uit te-->
+<!--                        klappen-->
+<!--                    </button>-->
+<!--                    &lt;!&ndash;        <button>filterfunctie</button>&ndash;&gt;-->
+<!--                    &lt;!&ndash;    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;        https://www.w3schools.com/css/css_boxmodel.asp-->
+<!--                    hier naar kijken met chekboxes of als sorteer functie activitetien dvd boeken&ndash;&gt;-->
+<!--                    <form aria-label="Contact information" class="collaps-open-funtion-boeken">-->
+<!--                        <p>onderwerpen</p>-->
+<!--                        &lt;!&ndash; de section class filter moet pas weergegeven worden nadat op de button geklikt is           &ndash;&gt;-->
+<!--                        <input id="onderwerp-sport" name="onderwerp-sport" type="checkbox"-->
+<!--                               value="sport">-->
+<!--                        <label for="onderwerp-sport"> sport</label><br>-->
+<!--                        <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"-->
+<!--                               value="cultuur">-->
+<!--                        <label for="onderwerp-cultuur">cultuur</label><br>-->
+<!--                        <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"-->
+<!--                               value="kunst">-->
+<!--                        <label for="onderwerp-kunst">kunst</label><br>-->
+<!--                        <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox"-->
+<!--                               value="mode">-->
+<!--                        <label for="onderwerp-mode">mode</label><br>-->
+<!--                        <input type="reset" value="reset!">-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div class="item-filter" tabindex="0">-->
+<!--                    &lt;!&ndash;        <button>filterfunctie</button>&ndash;&gt;-->
+<!--                    &lt;!&ndash;    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox&ndash;&gt;-->
+
+<!--                    &lt;!&ndash;        https://www.w3schools.com/css/css_boxmodel.asp-->
+<!--                    hier naar kijken met chekboxes of als sorteer functie activitetien dvd boeken&ndash;&gt;-->
+<!--                    <button aria-pressed="false" class="collapsible-dvd" onclick="filtershowdvd()"-->
+<!--                            tabindex="0"-->
+<!--                            type="button">dvd filter onderwerpen-->
+<!--                        klik om uit-->
+<!--                        te klappen-->
+<!--                    </button>-->
+<!--                    <form aria-label="Contact information" class="collaps-open-funtion-dvd">-->
+<!--                        <p>onderwerpen</p>-->
+<!--                        <input id="onderwerp-sport-dvd" name="onderwerp-sport" type="checkbox"-->
+<!--                               value="sport">-->
+<!--                        <label for="onderwerp-sport-dvd"> sport</label><br>-->
+<!--                        <input id="onderwerp-cultuur-dvd" name="onderwerp-cultuur" type="checkbox"-->
+<!--                               value="cultuur">-->
+<!--                        <label for="onderwerp-cultuur-dvd">cultuur</label><br>-->
+<!--                        <input id="onderwerp-kunst-dvd" name="onderwerp-kunst" type="checkbox"-->
+<!--                               value="kunst">-->
+<!--                        <label for="onderwerp-kunst-dvd">kunst</label><br>-->
+<!--                        <input id="onderwerp-mode-dvd" name="onderwerp-mode" type="checkbox" value="mode">-->
+<!--                        <label for="onderwerp-mode-dvd">mode</label><br>-->
+<!--                        <input type="reset" value="reset!">-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->

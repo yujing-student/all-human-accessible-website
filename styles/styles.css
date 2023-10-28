@@ -396,7 +396,7 @@ body.dark .home .text {
 /*iphone formaakt*/
 .grid-container {
     display: grid; /*1 grote container met daarin 4 kinderen*/
-    grid-gap: 1em;
+    /*grid-gap: 1em;*/
     grid-template-areas:
             "item1 "/*regel1*/
             "item2"
@@ -438,14 +438,16 @@ body.dark .home .text {
 
 .grid-item:nth-child(5) {
     grid-area: item5;
-    height: 10em;
+    height: 12em;
 
 }
+
 .grid-item:nth-child(6) {
     grid-area: item6;
-    /*background-color: green;*/
-    /*padding: 0;*/
 
+}
+.grid-item:nth-child(7) {
+    grid-area: item7;
 
 }
 
@@ -474,7 +476,7 @@ button {
     margin-bottom: 2em;
 }
 
-.collaps-open-funtion-boeken{ /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
+.collaps-open-funtion-boeken { /*dit zijn de buttons in de lijst en op deze pagina voor meer info*/
     display: none;
 }
 
@@ -488,7 +490,8 @@ h3 .dark {
     /*margin: 1em;*/
     width: 15em;
 }
-h3{
+
+h3 {
     width: 25em;
 }
 
@@ -535,7 +538,7 @@ h3{
 #carousel {
     overflow: auto; /*dit is onhandig omdat je boek1 niet kan vergelijken met boek 6 die aan het einde van de carousel staat*/
     white-space: nowrap; /*dit kan wel als alle boeken onder of naast elkaar komen te staan*/
-    width: 21em;
+    width: 36em;
 }
 
 
@@ -653,6 +656,8 @@ td {
            "item5 item6";
 
         /*grid-template-columns: 1fr 1fr;*/
+        gap: 10px;
+
         grid-template-columns: repeat(2, minmax(0, 10fr));
 
 
@@ -661,12 +666,15 @@ td {
     .grid-item:nth-child(1) {
         grid-area: item1;
 
+
     }
 
 
     .grid-item:nth-child(2) {
         grid-area: item3;
-
+        /*position: relative;*/
+        /*top: -5em;*/
+    /*    dit kan niet vanwege uitklapbare summery */
 
     }
 
@@ -692,6 +700,7 @@ td {
 
 
     }
+
     .grid-item:nth-child(6) {
         grid-area: item6;
         margin-bottom: 1em;
@@ -700,11 +709,16 @@ td {
 
 
     }
+    .position-info-arrow{
+        position: relative;
+        top: 4em;
+    }
 
-   .reset .grid-filters-functions, .showresults {
+    .reset .grid-filters-functions, .showresults {
         margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
     }
-    .searchbar-div{
+
+    .searchbar-div {
         margin-bottom: 2em;
     }
 
@@ -725,7 +739,7 @@ td {
     }
 
     #carousel {
-        width: 40em;
+        width: 55em;
     }
 
     .grid-books-blocks {
@@ -753,7 +767,9 @@ td {
            "item5 item6";
 
         /*grid-template-columns: 1fr 1fr;*/
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+
+        grid-template-columns: repeat(2, minmax(0, 10fr));
 
 
     }
@@ -761,23 +777,32 @@ td {
     .grid-item:nth-child(1) {
         grid-area: item1;
 
+
     }
 
-    /*todo naaar dit kijken https://developer.chrome.com/docs/lighthouse/accessibility/?utm_source=lighthouse&utm_medium=devtools*/
+
     .grid-item:nth-child(2) {
         grid-area: item3;
-
+        /*position: relative;*/
+        /*top: -5em;*/
+        /*    dit kan niet vanwege uitklapbare summery */
 
     }
 
     .grid-item:nth-child(3) {
         grid-area: item2;
         margin-bottom: 1em;
+        position: relative;
+        left: 5em;
+
     }
 
 
     .grid-item:nth-child(4) {
         grid-area: item4;
+        margin-bottom: 1em;
+        position: relative;
+        left: 5em;
 
     }
 
@@ -789,12 +814,20 @@ td {
 
     .grid-item:nth-child(6) {
         grid-area: item6;
+        margin-bottom: 1em;
+        position: relative;
+        left: 5em;
 
 
     }
 
-    .searchbar-div, .grid-filters-functions, .showresults {
-        margin-bottom: 1em;
+
+    .reset .grid-filters-functions, .showresults {
+        margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
+    }
+
+    .searchbar-div {
+        margin-bottom: 2em;
     }
 
 
@@ -805,7 +838,8 @@ td {
         grid-template-columns: 12em 12em;
         gap: 1em;
 
-        /*transform: translate(28em, -5em);*/
+        /*transform: translate(1em, 0em);*/
+        /*margin: 1em;*/
     }
 
     .item-filter {
@@ -813,13 +847,22 @@ td {
     }
 
     #carousel {
-        width: 75em;
+        width: 55em;
     }
 
     .grid-books-blocks {
+
         display: grid;
-        grid-template-areas: "item1 item2 item3";
+        grid-template-areas: "item1 item2";
     }
+
+    .div-container-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 
 }
 
@@ -836,7 +879,7 @@ td {
 
     .grid-item:nth-child(1) {
         grid-area: item1;
-
+        height: 50px;
     }
 
     /*1ste div*/
@@ -909,7 +952,7 @@ td {
 
     .grid-item:nth-child(1) {
         grid-area: item1;
-
+        height: 50px;
     }
 
     /*1ste div*/
