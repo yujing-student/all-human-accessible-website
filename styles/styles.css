@@ -404,6 +404,7 @@ body.dark .home .text {
             "item4"
             "item5"
             "item6"
+    "item7"
     /*"item6"!*regel2*!*/;
     grid-template-columns: 1fr;
 }
@@ -541,11 +542,7 @@ h3 {
     white-space: nowrap; /*dit kan wel als alle boeken onder of naast elkaar komen te staan*/
     width: 36em;
 }
-.grid-buttons-left-rigt{
-        display: grid;
-        grid-template-columns: auto auto; /* Maak twee kolommen */
-        gap: 10px; /* Voeg wat ruimte toe tussen de knoppen */
-}
+
 
 .linkerkant-carosel-knop {
     /*display: inline-block;*/
@@ -654,7 +651,8 @@ td {
           "item1 item3"
         "item2 item3"
         "item4 item3"
-        "item5 item6";
+        "item5 item6"
+    "item7 item7";
 
         /*grid-template-columns: 1fr 1fr;*/
         gap: 2em;
@@ -704,6 +702,7 @@ td {
     }
 
 
+
     .position-info-arrow {
         position: relative;
         top: 4em;
@@ -737,6 +736,25 @@ td {
         width: 55em;
     }
 
+    .linkerkant-carosel-knop {
+        /*display: inline-block;*/
+        background-color: white;
+        border-radius: 6%;
+        padding: 20px;
+        position: absolute;
+        /*display: grid;*/
+    }
+
+    .knoppen-carousel {
+        /*background-color: red;*/
+        /*display: inline-block;*/
+        background-color: white;
+        border-radius: 6%;
+        padding: 20px;
+        position: absolute;
+        left: 10em;
+    }
+
     .grid-books-blocks {
 
         display: grid;
@@ -756,22 +774,26 @@ td {
 /*laptop*/
 @media (min-width: 60em)  and (max-width: 85em) {
     .grid-container {
-        grid-template-areas:
-           "item1 item3"
-           "item2 item3"
-           "item4 item3"
-           "item5 item6";
+
+         grid-template-areas:
+          "item1 item3"
+        "item2 item3"
+        "item4 item3"
+        "item5 item6"
+        "item7 item7";
         /*width: 50em;*/
-        margin-left: calc((100% - 61em) / 2);
-        margin-right: calc((100% - 61em) / 2);
+
         /*grid-template-columns: 1fr 1fr;*/
         gap: 2em;
 
         grid-template-columns: repeat(2, minmax(0, 10fr));
         /*width: 43em ;*/
+        /*margin-left: calc((100% - 61em) / 2);*/
+        /*margin-right: calc((100% - 61em) / 2);*//*dit werkt niet want je buttons bewegen mee en dat is niet de bedoeling*/
 
 
     }
+
 
     .grid-item:nth-child(1) {
         grid-area: item1;
@@ -812,6 +834,12 @@ td {
 
 
     }
+    .grid-item:nth-child(7) {
+        grid-area: item7;
+        grid-column: 1/-1;
+
+
+    }
 
     .to-long-text {
         width: 24em;
@@ -845,6 +873,25 @@ td {
         width: 55em;
     }
 
+    .linkerkant-carosel-knop {
+        /*display: inline-block;*/
+        background-color: white;
+        border-radius: 6%;
+        padding: 20px;
+        position: absolute;
+        /*display: grid;*/
+    }
+
+    .knoppen-carousel {
+        /*background-color: red;*/
+        /*display: inline-block;*/
+        background-color: white;
+        border-radius: 6%;
+        padding: 20px;
+        position: absolute;
+        left: 10em;
+    }
+
 
 
 
@@ -868,10 +915,11 @@ td {
 @media (min-width: 85em) and (max-width: 100em) {
     .grid-container {
         grid-template-areas:
-           "item1 item3"
-           "item2 item3"
-           "item4 item3"
-           "item5 item6";
+          "item1 item3"
+        "item2 item3"
+        "item4 item3"
+        "item5 item6"
+    "item7 item7";
 
         /*grid-template-columns: 1fr 1fr;*/
         gap: 2em;
@@ -879,12 +927,12 @@ td {
         grid-template-columns: repeat(2, minmax(0, 10fr));
         /*width: 43em ;*/
         /*grid-template-columns: 33em 33em;*/
-        margin-left: calc((100% - 78em) / 2);
-        margin-right: calc((100% - 78em) / 2);
+
         /*grid-template-columns: repeat(2, minmax(0, 10fr));*/
 
     }
-
+    margin-left: calc((100% - 78em) / 2);
+    margin-right: calc((100% - 78em) / 2);
     .grid-item:nth-child(1) {
         grid-area: item1;
 
@@ -958,24 +1006,28 @@ td {
 /*todo dit moet gefixt worden dat het scherm door 2 gaat en dat filter functie in het 6de vak komt */
 /*4k scherm*/
 @media (min-width: 100em) {
+
     .grid-container {
         grid-template-areas:
-           "item1 item3"
-           "item2 item3"
-           "item4 item3"
-           "item5 item6";
+          "item1 item3"
+        "item2 item3"
+        "item4 item3"
+        "item5 item6"
+    "item7 item7";
+        justify-content: center;
+        align-content: center;
 
         /*grid-template-columns: 1fr 1fr;*/
         gap: 2em;
         max-width: 78em;
-        margin-left: calc((100% - 78em) / 2);
-        margin-right: calc((100% - 78em) / 2);
+
         grid-template-columns: repeat(2, minmax(0, 10fr));
         /*width: 43em ;*/
         /*grid-template-columns: 33em 33em;*/
         /*margin: 0 auto;*/
 
     }
+
 
     .grid-item:nth-child(1) {
         grid-area: item1;
