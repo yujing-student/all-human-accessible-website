@@ -14,11 +14,11 @@
     <!-- Link to JavaScript script -->
     <script defer src="./scripts/script.js"></script><!--geen defer vanwege error in w3c validator-->
 
-    <title>indexpagina</title>
+    <title>homepagina</title>
     <!--    hier werkt de rode knp weer niet oorzaak niet bekend-->
 </head>
 <body><!--https://dequeuniversity.com/screenreaders/-->
-
+<a class="skip-link" href='#main'>Direct naar content</a>
 <nav class="sidebar close" tabindex="0">
     <!--https://www.w3.org/WAI/tutorials/menus/structure/-->
     <header>
@@ -267,8 +267,8 @@
                                    value="kunst">
                             <label for="onderwerp-kunst">kunst</label><br>
                             <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
-                                   value="mode">
-                            <label for="onderwerp-mode">mode</label><br>
+                                   value="fasion">
+                            <label for="onderwerp-mode">fashion</label><br>
                             <input type="reset" value="reset!">
                         </form>
                     </div>
@@ -306,7 +306,11 @@
                                                 <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-1.png">
                                                 <!--aanpassen grote afbeelding in windows foto's formaat wijzigen-->
-                                            <p class="booktitle" data-filter="sport" tabindex="0">ajax</p>
+                                            <a href="https://zoeken.oba.nl/detail/Michel-Faber/The-book-of-strange-new-things/Boek/?itemid=%7Coba-catalogus%7C1126633">
+
+                                              </a>
+                                            <p class="booktitle " data-filter="sport"><a href="#"> ajax jaarboek</a></p>
+
                                         </div>
 
                                     </div>
@@ -317,7 +321,8 @@
                                             <p>
                                                 <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-2.png">
-                                            <p class="booktitle" tabindex="0">psv</p>
+                                            <p class="booktitle" tabindex="0"> <a href="#">psv jaarboek</a></p>
+
                                         </div>
 
                                     </div>
@@ -328,7 +333,7 @@
                                             <p>
                                                 <img alt="dit is boek3" class="books-image"
                                                      src="image/backup/aangepast/book-3.png">
-                                            <p class="booktitle" tabindex="0">karl lagerfied</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">karl lagerfied</a></p>
                                         </div>
 
                                     </div>
@@ -339,7 +344,7 @@
                                             <p>
                                                 <img alt="dit is boek4" class="books-image"
                                                      src="image/backup/aangepast/book-4.png">
-                                            <p class="booktitle" tabindex="0">anna wintour</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">Little Book of Dior: The Story of the Iconic Fashion House</a></p>
                                         </div>
 
                                     </div>
@@ -350,7 +355,7 @@
                                             <p>
                                                 <img alt="dit is boek5" class="books-image"
                                                      src="image/backup/aangepast/book-5.png">
-                                            <p class="booktitle" tabindex="0">breitner</p>
+                                            <p class="booktitle" tabindex="0"><a href="#" >breitner</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -360,7 +365,7 @@
                                             <p>
                                                 <img alt="dit is boek6" class="books-image"
                                                      src="image/backup/aangepast/book-6.png">
-                                            <p class="booktitle" tabindex="0">van gogh</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">van gogh</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -370,7 +375,7 @@
                                             <p>
                                                 <img alt="dit is boek7" class="books-image"
                                                      src="image/backup/aangepast/book-7.png">
-                                            <p class="booktitle" tabindex="0">Memoirs of a Geisha</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">Memoirs of a Geisha</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -380,7 +385,7 @@
                                             <p>
                                                 <img alt="dit is boek8" class="books-image"
                                                      src="image/backup/aangepast/book-8.png">
-                                            <p class="booktitle" tabindex="0">The Darkening Age</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">The Darkening Age</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -390,7 +395,7 @@
                                             <p>
                                                 <img alt="dit is boe9" class="books-image"
                                                      src="image/backup/aangepast/book-9.png">
-                                            <p class="booktitle" tabindex="0">9</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">boek 9</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -400,7 +405,7 @@
                                             <p>
                                                 <img alt="dit is boek10" class="books-image"
                                                      src="image/backup/aangepast/book-10.png">
-                                            <p class="booktitle" tabindex="0">10</p>
+                                            <p class="booktitle" tabindex="0"><a href="#">boek 10</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -417,7 +422,7 @@
                         verbegen klik op verbeg carousel</p>
                     <details>
                         <summary class="showlist">lijstweergave zoekresultaten :</summary>
-                        <div class="showresultslist">
+                        <div class=""><!--showresultslist-->
                             <p class="start-book-items">resulaten boeken </p>
                             <div class="">
                                 <!--            <p>dit zijn de gevonden resultaten</p>-->
@@ -427,7 +432,7 @@
                                             <div class="div-container-image">
                                                 <img alt="dit is boek1" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-1.png">
-                                                <p class="booktitle" tabindex="0">ajax</p>
+                                                <p class="booktitle" tabindex="0"><a href="#">ajax</a></p>
 
                                             </div>
                                         </div>
@@ -437,7 +442,7 @@
                                             <div class="div-container-image">
                                                 <img alt="dit is boek2" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-2.png">
-                                                <p class="booktitle" tabindex="0">psv</p>
+                                                <p class="booktitle" tabindex="0"><a href="#">psv</a></p>
 
                                             </div>
                                         </div>
@@ -447,7 +452,7 @@
                                             <div class="div-container-image">
                                                 <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-3.png">
-                                                <p class="booktitle" tabindex="0">karl lagerfield</p>
+                                                <p class="booktitle" tabindex="0"><a href="#">karl lagerfield</a></p>
 
                                             </div>
                                         </div>
@@ -457,7 +462,8 @@
                                             <div class="div-container-image">
                                                 <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-3.png">
-                                                <p class="booktitle" tabindex="0">devils wears prada</p>
+                                                <p class="booktitle" tabindex="0"><a href="#">Little Book of Dior: The Story of the Iconic Fashion House</a></p>
+<!--                                                dit is met flexbox en dat moet grid worden en bij javascript is het display grid ipv block-->
 
                                             </div>
                                         </div>
@@ -467,7 +473,7 @@
                                             <div class="div-container-image">
                                                 <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-3.png">
-                                                <p class="booktitle" tabindex="0">Breitner - Girl in A Kimono</p>
+                                                <p class="booktitle" tabindex="0"><a href="#"> Girl in A Kimono</a></p>
 
                                             </div>
                                         </div>
@@ -477,7 +483,7 @@
                                             <div class="div-container-image">
                                                 <img alt="dit is boek3" class="books-image" data-filter="sport"
                                                      src="image/backup/aangepast/book-3.png">
-                                                <p class="booktitle" tabindex="0">dear theo</p>
+                                                <p class="booktitle" tabindex="0"><a href="#">dear theo</a></p>
 
                                             </div>
                                         </div>

@@ -142,7 +142,7 @@ function searchfunction() {
 //     }
 // }
 
-showdivresultslist();
+// showdivresultslist();
 
 function hidecarusel() {/*carousel laten zien*/
 
