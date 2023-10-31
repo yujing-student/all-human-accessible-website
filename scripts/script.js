@@ -123,24 +123,24 @@ function searchfunction() {
 }
 
 
-function showdivresultslist() {/*carousel laten zien*/
-
-    let divresults = document.querySelector(".showresultslist");
-    // seleteer de .showresylts div
-    divresults.style.display = "none"; // Verberg het element initieel
-
-    let button = document.querySelector(".showlist"); // Selecteer de knop
-
-    button.onclick = function () {
-        let displaydivresults = window.getComputedStyle(divresults).display;
-
-        if (displaydivresults === "none") {
-            divresults.style.display = "block"; // Toon het element als erop wordt geklikt
-        } else {
-            divresults.style.display = "none"; // Verberg het element als het al wordt weergegeven
-        }
-    }
-}
+// function showdivresultslist() {/*carousel laten zien bewaren in geval van button functie*/
+//
+//     let divresults = document.querySelector(".showresultslist");
+//     // seleteer de .showresylts div
+//     divresults.style.display = "none"; // Verberg het element initieel
+//
+//     let button = document.querySelector(".showlist"); // Selecteer de knop
+//
+//     button.onclick = function () {
+//         let displaydivresults = window.getComputedStyle(divresults).display;
+//
+//         if (displaydivresults === "none") {
+//             divresults.style.display = "block"; // Toon het element als erop wordt geklikt
+//         } else {
+//             divresults.style.display = "none"; // Verberg het element als het al wordt weergegeven
+//         }
+//     }
+// }
 
 showdivresultslist();
 
@@ -161,32 +161,32 @@ function hidecarusel() {/*carousel laten zien*/
 
 hidecarusel()
 // todo deze funcite moet nog werkend met checkboxes
-document.querySelector("form").addEventListener('change', (event) => {
-    let filter = event.target.value;//hier is filter gelijk aan event
-    let unorderedlist = document.getElementById("myUL");
-    const listitems = unorderedlist.getElementsByTagName('li');// de li is verwijzined naar de <li> in html
-
-    // const datafiltersport = document.querySelector('[data-filter="sport"]');
-    // let sport = document.getElementById('onderwerp-sport')
-    // for loop i = 0 en die gaat door alle li's in html tot en met het einde daar staat .lenght ook voor
-    for (let i = 0; i < listitems.length; i++) {
-        listitems[i].dataset.filter
-        for (let i = 0; i < ul.length; i++) {
-            let all_ul = ul[i];/*verzamleing door de 2 ul */
-            let alle_li = all_ul.getElementsByTagName("li");/*alle li itemsn*/
-
-            for (let j = 0; j < alle_li.length; j++) {/*loop door de li items*/
-                 let booktitle = alle_li[j].getElementsByClassName("booktitle")[0];/*haal eerste element op van de li items*/
-                let txtValue = booktitle.textContent || booktitle.innerText;/*txt is de */
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    alle_li[j].style.display = "";
-                } else {
-                    alle_li[j].style.display = "none";
-                }
-                li.push(alle_li[j]); // Voeg het li-element toe aan de li-array
-            }
-    }
-}});
+// document.querySelector("form").addEventListener('change', (event) => {
+//     let filter = event.target.value;//hier is filter gelijk aan event
+//     let unorderedlist = document.getElementById("myUL");
+//     const listitems = unorderedlist.getElementsByTagName('li');// de li is verwijzined naar de <li> in html
+//
+//     // const datafiltersport = document.querySelector('[data-filter="sport"]');
+//     // let sport = document.getElementById('onderwerp-sport')
+//     // for loop i = 0 en die gaat door alle li's in html tot en met het einde daar staat .lenght ook voor
+//     for (let i = 0; i < listitems.length; i++) {
+//         listitems[i].dataset.filter
+//         for (let i = 0; i < ul.length; i++) {
+//             let all_ul = ul[i];/*verzamleing door de 2 ul */
+//             let alle_li = all_ul.getElementsByTagName("li");/*alle li itemsn*/
+//
+//             for (let j = 0; j < alle_li.length; j++) {/*loop door de li items*/
+//                  let booktitle = alle_li[j].getElementsByClassName("booktitle")[0];/*haal eerste element op van de li items*/
+//                 let txtValue = booktitle.textContent || booktitle.innerText;/*txt is de */
+//                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//                     alle_li[j].style.display = "";
+//                 } else {
+//                     alle_li[j].style.display = "none";
+//                 }
+//                 li.push(alle_li[j]); // Voeg het li-element toe aan de li-array
+//             }
+//     }
+// }});
 
 // clickelementright();
 // clickelementleft();
