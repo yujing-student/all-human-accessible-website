@@ -15,13 +15,13 @@ Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk vo
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 voor mobiel
 <br>
-<img src="img_2.png" width="400px">
-<img src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/96ede0f2-d734-486a-93a6-1a725f60717c" width="400px">
-<img src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/89c4b3ea-effa-4c55-9749-dd9d85195869" width="400px">
-<img src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/610ca250-b1c8-4ddc-94fe-e0164716e1f6" width="400px">2
+<img src="readme-images/img.png" width="400px">
+<img src="readme-images/img_1.png" width="400px">
+verder is er ook een reset button om alle resultaten te laten zien
+<img src="readme-images/img-3.png" width="400px">
 <br>
 voor tablet
-<img src="img.png" width="400px">
+
 <img src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/104697fd-713d-43d7-9df1-5099dbbc750b" width="400px">
 
 
@@ -35,7 +35,7 @@ in de html heb ik gekozen voor grid
 
 ## installatie
 je kan op de groen knop code klikken en dan de code downloaden
-![img_1.png](img_1.png)
+![img_1.png](readme-images/img_1.png)
 ## Bronnen
 
 ## Licentie
