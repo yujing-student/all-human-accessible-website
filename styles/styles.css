@@ -463,7 +463,7 @@ button {
     border: none;
     box-shadow: 10px 5px 5px #938f8f;
 
-    background-color: #E61C24;
+    background-color: #f7f4f4;
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
     font-size: 1em;
@@ -471,7 +471,7 @@ button {
     border-radius: 6px;
     padding: 0.5rem;
     margin-left: 0.2em;
-    color: white;
+    /*color: white;*/
 }
 
 .margin-divs-question {
@@ -483,7 +483,8 @@ button {
 }
 
 .button-boeken {
-    background-color: green;
+    /*background-color: white;*/
+    color: black;
 
 }
 
@@ -507,6 +508,7 @@ h3 {
     /*grid-template-rows: 13em 14em;*/
     /*position: relative;*/
     margin-bottom: 1em;
+    font-family: AvenirMedium;
 
 }
 
@@ -516,7 +518,7 @@ h3 {
 }
 
 .searchbooks-button {
-    background-color: #f7f4f4;
+    /*background-color: #f7f4f4;*/
     color: black;
 }
 
@@ -729,6 +731,7 @@ td {
 
     .item-filter {
         margin: 0.1em;
+        font-family: AvenirMedium;
     }
 
     #carousel {
@@ -867,6 +870,7 @@ td {
 
     .item-filter {
         margin: 0.1em;
+        font-family: AvenirMedium;
     }
 
     #carousel {
@@ -988,6 +992,7 @@ td {
 
     .item-filter {
         margin: 0.1em;
+        font-family: AvenirMedium;
     }
 
     #carousel {
@@ -1081,6 +1086,7 @@ td {
 
     .item-filter {
         margin: 0.1em;
+        font-family: AvenirMedium;
     }
 
     #carousel {
