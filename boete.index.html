@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <i class='bx bx-chevron-right toggle' tabindex="0"></i>
+        <i aria-label="uitklappen navigatiemenu" class='bx bx-chevron-right toggle' role="button" tabindex="0"></i>
     </header>
 
     <div class="menu-bar" tabindex="0">
@@ -145,50 +145,48 @@
     </div>
 
 </nav>
-<section class="home">
-    <div class="text"><img alt="logo" src="image/oba_20.png"></div>
-    <div class="div-boete-table">
-        <h2>overzicht boeken in te leveren om boete te voorkomen</h2>
-        <p class="paragraph-table-info">levert u een boek na de in te leveren datum in dan krijgt u een boete</p>
-        <table>
-            <tr>
-                <th>naam boek</th>
-                <th>datum in te leveren</th>
 
-            </tr>
-            <tr>
-                <td>ajax jaarboek</td>
-                <td>28-12-2023</td>
+    <main class="home" tabindex="0">
+        <section class="" tabindex="0">
+        <div class="text"><img alt="logo" src="image/oba_20.png" tabindex="0"></div>
+        <div class="div-boete-table" tabindex="0">
+            <h2 tabindex="0">overzicht boeken in te leveren om boete te voorkomen</h2>
+            <p class="paragraph-table-info" tabindex="0">levert u een boek na de in te leveren datum in dan krijgt u een boete</p>
+            <table aria-label="dit is de tabel met het overzichtboetepagina">
+                <tr>
+                    <th scope="col" id="naam">naam boek</th>
+                    <th scope="col" id="datum">datum in te leveren</th>
+                </tr>
+                <tr>
+                    <td headers="naam">ajax jaarboek</td>
+                    <td headers="datum">28-12-2023</td>
+                </tr>
+                <tr>
+                    <td>devils wears prada</td>
+                    <td>15-10-2023</td>
+                </tr>
+                <tr>
+                    <td>psv jaarboek</td>
+                    <td>15-12-2023</td>
+                </tr>
+                <tr>
+                    <td>gijp</td>
+                    <td>10-11-2023</td>
+                </tr>
+                <tr>
+                    <td>nirwana</td>
+                    <td>14-2-2023</td>
+                </tr>
+                <tr>
+                    <td>afkowobo</td>
+                    <td>19-10-2023</td>
+                </tr>
+            </table>
+        </div>
+        </section>
+    </main>
 
-            </tr>
-            <tr>
-                <td>devils wears prada</td>
-                <td>15-10-2023</td>
 
-            </tr>
-            <tr>
-                <td>psv jaarboek</td>
-                <td>15-12-2023</td>
-
-            </tr>
-            <tr>
-                <td>gijp</td>
-                <td>10-11-2023</td>
-
-            </tr>
-            <tr>
-                <td>nirwana</td>
-                <td>14-2-2023</td>
-
-            </tr>
-            <tr>
-                <td>afkowobo</td>
-                <td>19-10-2023</td>
-
-            </tr>
-        </table>
-    </div>
-</section>
 </body>
 </html>
 
