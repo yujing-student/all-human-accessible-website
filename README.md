@@ -15,21 +15,27 @@ Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk vo
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <h3>voor mobiel</h3>
 <br>
-<img src="readme-images/img.png" width="300px">
-<img src="readme-images/img_1.png" width="400px">
+<img width="322" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/2ff2e41d-b841-47f9-9ada-e442363b0ce2">
+<br>
+<img width="319" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/39919145-adc2-4adc-99ab-2b90d11b7d51">
 <hr>
 verder is er ook een reset button om alle resultaten te laten zien
 <br>
-<img src="readme-images/img-3.png" width="300px">
+<img width="342" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/9e8e522f-72e3-4ea6-8cec-8a9991615967">
+
 <hr>
 <h3>voor tablet</h3>
+<img width="404" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/03d6933c-eaa6-4d0e-88ba-219fc40aef97">
+
+
 <br>
-<img width="414" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/3ed11ac0-dc4d-4f6f-8036-1a761917f1d8">
+<img width="409" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/4f5de517-5c1b-44df-8e2c-8d93c634e45b">
 <br>
-<img width="383" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/c541aad4-6f55-454b-8a9a-7f632b7c7083">
+<img width="438" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/d6ac990b-6c1d-4e97-8939-2753986018cd">
+
 <hr>
 <h3>voor laptop en deskstop</h3>
-het verschil dat de caorusel breder is en dat de lijstweergave 3 koloms zijn 
+het verschil is dat de carousel breder is en dat de lijstweergave 3 koloms zijn 
 
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
