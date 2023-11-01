@@ -80,9 +80,12 @@ grid-template-areas:
 
     }
 ```
+
 <h3>javascript code</h3>
 hier heb ik voor het zoeken deze code gemaakt zodat er gezocht kan worden naar het boek op titel 
-````
+
+```
+
 function searchfunction() {
 let input, filter, ul, li = [], booktitle, txtValue;
 input = document.getElementById("searchfunciton");
@@ -113,7 +116,8 @@ ul = document.getElementsByClassName("myUL");
         }
     });
 }
-````
+
+```
 
 ## installatie
 je kan op de groen knop code klikken en dan de code downloaden ook staat er rechtsboven meestal fork
