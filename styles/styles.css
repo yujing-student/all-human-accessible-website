@@ -461,9 +461,9 @@ details { /*dit is het pijljte*/
 
 button {
     border: none;
-    box-shadow: 10px 5px 5px #938f8f;
+    box-shadow: 10px 5px 5px #858585;
 
-    background-color: #f7f4f4;
+    background-color: white;
     /*color: #202121;*/
     /*background-color: #DDFF00;*/
     font-size: 1em;
