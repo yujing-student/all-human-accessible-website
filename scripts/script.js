@@ -188,6 +188,33 @@ hidecarusel()
 //     }
 // }});
 
+// functie voor button disbale
+// <button id="mijnknop" disabled="disabled"><span>submit👍</span></button>
+// button[disabled="disabled"]::before
+// /*  */
+function isEmpty(){/*dit kan erbij*/
+    let mijnmail = document.getElementById("mijnmail").value;
+    let mijnnaam = document.getElementById("mijnnaam").value;
+    let mijntelefoon = document.getElementById("mijntelefoon").value;
+    let mijnbedrijf = document.getElementById("mijnbedrijf").value;
+    let mijnfunctie = document.getElementById("mijnfunctie").value;
+    let mijnadres = document.getElementById("mijnadres").value;
+    let mijnwebsite = document.getElementById("mijnwebsite").value;
+
+    if (mijnmail!=="" && mijnnaam!=="" && mijntelefoon!=="" && mijnbedrijf!=="" && mijnfunctie!=="" && mijnadres!=="" && mijnwebsite!==""){
+        document.getElementById("mijnknop").removeAttribute("disabled");
+
+
+
+    }
+
+    else if (mijnmail=="" || mijnnaam=="" || mijntelefoon=="" || mijnbedrijf=="" || mijnfunctie=="" || mijnadres=="" || mijnwebsite==""){
+        document.getElementById("mijnknop").setAttribute("disabled" ,"disabled");
+    }
+
+
+
+}
 // clickelementright();
 // clickelementleft();
 
