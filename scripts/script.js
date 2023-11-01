@@ -150,13 +150,21 @@ function hidecarusel() {/*carousel laten zien*/
     // seleteer de .showresylts div
     let button = document.querySelector(".hidecouarsel"); // selecteer de button
 
-    button.onclick = function () { // klik je op de button dat komt deze if else
+    // button.onclick = function () { // klik je op de button dat komt deze if else
+    //     if (divresults.style.display === "block") {
+    //         divresults.style.display = "none"; // laat het formulier zien of verbeg het
+    //     } else {
+    //         divresults.style.display = "block";
+    //     }
+    // }
+
+    button.addEventListener('click', function () {
         if (divresults.style.display === "block") {
             divresults.style.display = "none"; // laat het formulier zien of verbeg het
         } else {
             divresults.style.display = "block";
         }
-    }
+    });
 }
 
 hidecarusel()
