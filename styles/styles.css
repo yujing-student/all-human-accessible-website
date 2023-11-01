@@ -484,7 +484,8 @@ button {
 
 .button-boeken {
     /*background-color: white;*/
-    color: black;
+    background-color: #FF6400;
+    color: #000;
 
 }
 
@@ -496,8 +497,11 @@ h3 .dark {
 
 h3 {
     width: 21em;
+    /*margin-bottom: 1em;*/
 }
-
+.hidecouarsel{
+    margin-bottom: 3em;
+}
 
 #searchfunciton {
     font-size: 1em;
@@ -537,6 +541,8 @@ h3 {
 
 .collapsible-boeken {
     width: 15em;
+    /*background: #000000;*/
+    /*color: #FFFFFFFF;*/
 }
 
 #carousel {
