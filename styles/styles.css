@@ -445,6 +445,7 @@ body.dark .home .text {
 
 .grid-item:nth-child(6) {
     grid-area: item6;
+    margin-top: 2em;
 
 }
 
@@ -496,7 +497,7 @@ h3 .dark {
 }
 
 h3 {
-    width: 21em;
+    width: 15em;
     /*margin-bottom: 1em;*/
 }
 .hidecouarsel{
@@ -742,6 +743,7 @@ td {
 
     #carousel {
         width: 55em;
+        margin-top: 2em;
     }
 
     .linkerkant-carosel-knop {
@@ -881,6 +883,7 @@ td {
 
     #carousel {
         width: 75em;
+        margin-top: 2em;
     }
 
     .linkerkant-carosel-knop {
@@ -1003,6 +1006,7 @@ td {
 
     #carousel {
         width: 85em;
+        margin-top: 2em;
     }
 
 
