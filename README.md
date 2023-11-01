@@ -1,8 +1,8 @@
 
 
 # Accessible Website voor de oba
-Ik ga voor de oba verder met de welkompagina waarin ik ook ga kijken hoe ik deze website zo toegankelijkmogelijk kan krijgen
-Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
+Ik ga voor de oba verder met de welkompagina waarin ik ook ga kijken hoe ik deze website zo toegankelijk mogelijk kan maken
+
 
 ## Inhoudsopgave
 
@@ -13,6 +13,7 @@ Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk vo
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+de gebruiker die ziet de welkompagina en kan vanf hier naar d eboetepagina en zoeken naar boeken dvd's en activiteiten
 <h3>voor mobiel</h3>
 <br>
 <img width="322" alt="image" src="https://github.com/yujing-student/all-human-accessible-website/assets/100352887/2ff2e41d-b841-47f9-9ada-e442363b0ce2">
