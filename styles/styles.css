@@ -490,16 +490,12 @@ button {
 
 }
 
-h3 .dark {
-    background-color: white;
+h3  {
+    /*background-color: white;*/
     /*margin: 1em;*/
     width: 15em;
 }
 
-h3 {
-    width: 15em;
-    /*margin-bottom: 1em;*/
-}
 .hidecouarsel{
     margin-bottom: 3em;
 }
@@ -517,7 +513,7 @@ h3 {
 
 }
 
-.showresults, .showresultslist {
+.showresults {
     display: none;
     color: var(--text-color);
 }
@@ -635,22 +631,13 @@ h3 {
     flex-direction: column;
     margin: 1em;
 }
-.div-container-image-test{
-    display: flex;
-    flex-flow: column;
-    align-items: start;
-    justify-content: space-between;
-    text-align: start;
-    margin: 0 3rem 2rem 0;
-}
+
 .info-text-verbeg{
     width: 20em;
+    margin-top: 3em;
 
 }
-.grid-books-grid{
-    display: grid;
-    grid-template-areas: "item1 item2";
-}
+
 
 
 #carousel, .showlist, .reset, .grid-filters-functions {
@@ -675,6 +662,10 @@ a:hover{
     color: var(--text-color);
     box-shadow: 3px 3px 2px rgb(187, 187, 187);
     transition: var(--tran-03);
+}
+.info .dark{
+    background-color: black;
+    color: white;
 }
 .div-boete-table {
     display: inline-block;
@@ -762,10 +753,10 @@ td {
     }
 
 
-    .position-info-arrow {
-        position: relative;
-        top: 4em;
-    }
+    /*.position-info-arrow {*/
+    /*    position: relative;*/
+    /*    top: 4em;*/
+    /*}*/
 
     .reset .grid-filters-functions, .showresults {
         margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
@@ -830,6 +821,7 @@ td {
     }
     .info-text-verbeg{
         width: 46em;
+        margin-top: 3em;
 
     }
     .third-kop{
@@ -944,45 +936,45 @@ td {
         margin-top: 2em;
     }
 
-    .linkerkant-carosel-knop {
-        /*display: inline-block;*/
-        background-color: white;
-        border-radius: 6%;
-        padding: 20px;
-        position: absolute;
-        /*display: grid;*/
-    }
+    /*.linkerkant-carosel-knop {*/
+    /*    !*display: inline-block;*!*/
+    /*    background-color: white;*/
+    /*    border-radius: 6%;*/
+    /*    padding: 20px;*/
+    /*    position: absolute;*/
+    /*    !*display: grid;*!*/
+    /*}*/
 
-    .knoppen-carousel {
-        /*background-color: red;*/
-        /*display: inline-block;*/
-        background-color: white;
-        border-radius: 6%;
-        padding: 20px;
-        position: absolute;
-        left: 10em;
-    }
+    /*.knoppen-carousel {*/
+    /*    !*background-color: red;*!*/
+    /*    !*display: inline-block;*!*/
+    /*    background-color: white;*/
+    /*    border-radius: 6%;*/
+    /*    padding: 20px;*/
+    /*    position: absolute;*/
+    /*    left: 10em;*/
+    /*}*/
 
 
-    .grid-books-blocks {
+    /*.grid-books-blocks {*/
 
-        display: grid;
-        grid-template-areas: "item1 item2 item3 item4";
-    }
+    /*    display: grid;*/
+    /*    grid-template-areas: "item1 item2 item3 item4";*/
+    /*}*/
 
-    .div-container-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .info-text-verbeg{
-        width: 46em;
+    /*.div-container-image {*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.info-text-verbeg{*/
+    /*    width: 46em;*/
 
-    }
-    .third-kop{
-        width: 36em;
-    }
+    /*}*/
+    /*.third-kop{*/
+    /*    width: 36em;*/
+    /*}*/
 
 
 }
