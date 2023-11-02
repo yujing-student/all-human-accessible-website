@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: AvenirMedium;
-    src: url('Avenir-Medium.ttf');
+    src: url('Avenir-medium.ttf');
 }
 
 @font-face {
@@ -611,8 +611,8 @@ h3 {
     flex-direction: column;
     margin: 1em;
 }
-.dior{
-
+.info-text-verbeg{
+    width: 20em;
 
 }
 .grid-books-grid{
@@ -798,6 +798,10 @@ td {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .info-text-verbeg{
+        /*width: 30em;*/
+
     }
 
 
