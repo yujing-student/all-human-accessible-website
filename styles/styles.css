@@ -905,6 +905,11 @@ td {
     .to-long-text {
         width: 24em;
     }
+    .grid-books-blocks {
+
+        display: grid;
+        grid-template-areas: "item1 item2 item3 item4 item5";
+    }
 
     .reset .grid-filters-functions, .showresults {
         margin-bottom: 1em; /*dit is de afstand tussen de zoekbar boekenfilter en carousel*/
@@ -1068,8 +1073,9 @@ td {
 
 
     .grid-books-blocks {
+
         display: grid;
-        grid-template-areas: "item1 item2 item3 item4";
+        grid-template-areas: "item1 item2 item3 item4 item5 item6";
     }
 
 
