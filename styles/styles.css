@@ -36,7 +36,7 @@
 
 :root {
     /* ===== Colors ===== */
-    --body-color: #E4E9F7;
+    --body-color: #E4E9F7;  /*achtergrondkleur*/
     --sidebar-color: #FFF;
     --primary-color: #FF0000;
     --primary-color-light: #F6F5FF;
@@ -602,18 +602,26 @@ h3 {
 .grid-books {
     display: flex;
 }
-
+.booktitle{
+}
 .div-container-image {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.book {
-
-    border: 0.2em solid #fc2d2d;
     margin: 1em;
+}
+.dior{
+
+
+}
+.grid-books-grid{
+    display: grid;
+    grid-template-areas: "item1 item2";
+}
+.titledior{
+    word-wrap: break-word;
+    width: 200px;
 }
 
 #carousel, .showlist, .reset, .grid-filters-functions {
@@ -624,7 +632,21 @@ h3 {
     list-style-type: none;
     gap: 1em;
 }
-
+a{
+    color:black;   /*kleur linkjes*/
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.info{
+    padding: 0.5rem 2rem;
+    background: white;
+    border-radius: 1rem;
+    color: var(--text-color);
+    box-shadow: 3px 3px 2px rgb(187, 187, 187);
+    transition: var(--tran-03);
+}
 .div-boete-table {
     display: inline-block;
     font-size: 1em;
@@ -768,7 +790,7 @@ td {
     .grid-books-blocks {
 
         display: grid;
-        grid-template-areas: "item1 item2";
+        grid-template-areas: "item1 item2 item3 item4";
     }
 
     .div-container-image {
@@ -909,7 +931,7 @@ td {
     .grid-books-blocks {
 
         display: grid;
-        grid-template-areas: "item1 item2";
+        grid-template-areas: "item1 item2 item3 item4";
     }
 
     .div-container-image {
@@ -1100,11 +1122,11 @@ td {
     }
 
     #carousel {
-        width: 140em;
+        width: 110em;
     }
 
     .grid-books-blocks {
         display: grid;
-        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8 item9 item10";
+        grid-template-areas: "item1 item2 item3 item4 item5 item6 item7 item8";
     }
 }
