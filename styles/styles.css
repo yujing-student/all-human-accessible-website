@@ -545,6 +545,29 @@ h3 {
     /*background: #000000;*/
     /*color: #FFFFFFFF;*/
 }
+.checkboxes{
+    /*display: flex;*/
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+    margin: 0.5em;
+}
+.lable-checkbox{
+    vertical-align: middle;
+}
+.reset-button{
+    border: none;
+    box-shadow: 10px 5px 5px #858585;
+
+    background-color: white;
+    /*color: #202121;*/
+    /*background-color: #DDFF00;*/
+    font-size: 1em;
+    font-family: AvenirMedium;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-left: 0.2em;
+}
 
 #carousel {
     overflow: auto; /*dit is onhandig omdat je boek1 niet kan vergelijken met boek 6 die aan het einde van de carousel staat*/
@@ -603,6 +626,7 @@ h3 {
     display: flex;
 }
 .booktitle{
+    margin: 1em;
 }
 .div-container-image {
     display: flex;
@@ -610,6 +634,14 @@ h3 {
     align-items: center;
     flex-direction: column;
     margin: 1em;
+}
+.div-container-image-test{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: space-between;
+    text-align: start;
+    margin: 0 3rem 2rem 0;
 }
 .info-text-verbeg{
     width: 20em;
@@ -619,10 +651,7 @@ h3 {
     display: grid;
     grid-template-areas: "item1 item2";
 }
-.titledior{
-    word-wrap: break-word;
-    width: 200px;
-}
+
 
 #carousel, .showlist, .reset, .grid-filters-functions {
     margin-bottom: 3em;
@@ -800,8 +829,11 @@ td {
         flex-direction: column;
     }
     .info-text-verbeg{
-        /*width: 30em;*/
+        width: 46em;
 
+    }
+    .third-kop{
+        width: 36em;
     }
 
 
@@ -943,6 +975,13 @@ td {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .info-text-verbeg{
+        width: 46em;
+
+    }
+    .third-kop{
+        width: 36em;
     }
 
 

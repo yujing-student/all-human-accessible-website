@@ -167,9 +167,7 @@
                     </summary>
                     uw materialen verlengen,
                     zoals een boek of dvd. Verder kunt u uw reserveringen bekijken en uw uitlengeschiedenis zien
-                    daarnaast
-                    kunt
-                    u ook:
+
                 </details>
 
 
@@ -213,9 +211,18 @@
 
 
             <div class="grid-item" tabindex="0">
-                <h3 class="" tabindex="0">Hier kunt u zoeken naar boeken dvd's of activiteiten en klik op de
-                    button zoek om
-                    resulten te zien</h3>
+                <h3 class="" tabindex="0">Hier kunt u zoeken naar:</h3>
+                    <ul>
+                        <li>
+                            dvd's
+                        </li><li>
+                        activiteiten
+                    </li><li>
+                        boeken
+                    </li>
+                    </ul>
+                   <p>klik op zoek om
+                    resulten te zien</p>
                 <div class="searchbar-div" tabindex="0">
                     <!--                <label for="myInput"></label>-->
                     <input aria-label="zoeken naar boeken" id="searchfunciton" onkeyup="searchfunction()"
@@ -249,19 +256,19 @@
                               class="collaps-open-funtion-boeken">
                             <p>onderwerpen</p>
                             <!-- de section class filter moet pas weergegeven worden nadat op de button geklikt is           -->
-                            <input id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
+                            <input class="checkboxes" id="onderwerp-sport" name="onderwerp-sport" type="checkbox"
                                    value="sport">
-                            <label for="onderwerp-sport"> sport</label><br>
-                            <input id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
+                            <label class="lable-checkbox" for="onderwerp-sport"> sport</label><br>
+                            <input class="checkboxes"id="onderwerp-cultuur" name="onderwerp-cultuur" type="checkbox"
                                    value="cultuur">
                             <label for="onderwerp-cultuur">cultuur</label><br>
-                            <input id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
+                            <input class="checkboxes" id="onderwerp-kunst" name="onderwerp-kunst" type="checkbox"
                                    value="kunst">
                             <label for="onderwerp-kunst">kunst</label><br>
-                            <input id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
+                            <input class="checkboxes" id="onderwerp-mode" name="onderwerp-mode" type="checkbox"
                                    value="fasion">
                             <label for="onderwerp-mode">fashion</label><br>
-                            <input type="reset" value="reset!">
+                            <input class="reset-button" type="reset" value="reset!">
                         </form>
                     </div>
 
@@ -427,14 +434,26 @@
 
 
                     </div>
-                    <p class="info-text-verbeg">druk op verberg carousel om die weg te halen en klik weer op verber carusel om het carousel weer te geven</p>
+                    <p class="info-text-verbeg">
+                        <ul>
+
+                    <li>
+                        druk op verberg carousel om de carousel weg te halen
+                    </li>
+                    <li>
+                        klik weer op verber carusel om het carousel weer te geve
+                    </li>
+                </ul></p>
                     <button aria-pressed="false" class="hidecouarsel" tabindex="0"
                             title="searchbutton" type="button">
 
                         verberg carousel
                     </button>
-                    <h3 class="third-kop" tabindex="0">wilt u liever een lijst zien voor als overzicht klik op lijstweergave wilt u het carousel
-                        verbegen klik op verbeg carousel</h3>
+                    <h3 class="third-kop" tabindex="0">wilt u liever een lijst zien voor als overzicht</h3>
+                    <ul>
+                        <li>klik op lijstweerage zoekresultaten:</li>
+                    </ul>
+
                     <details>
                         <summary class="showlist">lijstweergave zoekresultaten :</summary>
                         <div class=""><!--showresultslist-->
