@@ -1,7 +1,7 @@
 /* Fonts being used by the oba */
 @font-face {
     font-family: AvenirRoman;
-    src: url(../font/Avenir-Roman.ttf);
+    /*src: url(../font/Avenir-Roman.ttf);*/
     /*value: auto;*/
     /*initial:auto;*/
 }
@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: AvenirBlack;
-    src: url(../font/Avenir-Black.ttf);
+    /*src: url(../font/Avenir-Black.ttf);*/
 }
 
 /* Custom properties */
