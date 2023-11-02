@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: AvenirMedium;
-    src: url('../font/Avenir-Medium.ttf');
+    src: url('Avenir-Medium.ttf');
 }
 
 @font-face {
@@ -58,7 +58,7 @@ body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    font-family: AvenirMedium,Arial;
+    font-family: AvenirMedium;
 }
 
 /* SCROLLBAR */
